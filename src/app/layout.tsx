@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import SmoothScroll from '@/components/layout/SmoothScroll';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import WaterRipple from '@/components/effects/WaterRipple';
 import './globals.css';
 
 // Fonts load straight from Google Fonts in the browser (no build-time download),
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Navbar />
           {children}
           <Footer />
+          <WaterRipple />
         </SmoothScroll>
       </body>
     </html>

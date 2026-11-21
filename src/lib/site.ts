@@ -226,3 +226,9 @@ export const ctaBand = {
   primary: { label: 'Get matched free', href: '/get-matched' },
   secondary: { label: 'Talk to our team', href: '/contact' },
 };
+
+// ---------------- Effects ----------------
+export const effects = {
+  waterRipple: true, // water ripple under the cursor across the whole site
+  showRippleToggle: true, // small on/off pill bottom-left (for testing — set false before launch)
+};
