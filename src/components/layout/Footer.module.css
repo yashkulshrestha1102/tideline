@@ -1,0 +1,211 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+  color: #a9c9be;
+  background:
+    radial-gradient(ellipse 50% 60% at 15% 0%, rgba(14, 107, 98, 0.45), rgba(14, 107, 98, 0) 70%),
+    linear-gradient(180deg, #012e2b 0%, #011f1d 100%);
+  padding: 90px var(--gutter) 32px;
+}
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px;
+}
+.brandCol {
+  flex: 1 1 320px;
+  max-width: 420px;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  color: #eaf6f1;
+}
+.wordmark {
+  font-family: var(--f-elegant);
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0.34em;
+}
+.tagline {
+  margin: 22px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.news {
+  margin-top: 34px;
+}
+.newsLabel {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: #eaf6f1;
+  margin-bottom: 12px;
+}
+.newsRow {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(169, 201, 190, 0.35);
+  transition: border-color 0.3s;
+}
+.newsRow:focus-within {
+  border-color: #9ee6d2;
+}
+.newsRow input {
+  flex: 1;
+  min-width: 0;
+  height: 48px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #eaf6f1;
+  font: 400 16px var(--f-sans);
+}
+.newsRow input::placeholder {
+  color: #6f9489;
+}
+.newsRow button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  background: #9ee6d2;
+  color: #012e2b;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.4s var(--ease);
+}
+.newsRow button:hover {
+  transform: translateX(4px);
+}
+.thanks {
+  margin: 0;
+  color: #9ee6d2;
+}
+.cols {
+  flex: 2 1 560px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+}
+.cols ul {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.colTitle {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #eaf6f1;
+}
+.link {
+  position: relative;
+  font-size: 15px;
+  color: #a9c9be;
+  transition: color 0.3s;
+}
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  background: #9ee6d2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease);
+}
+.link:hover {
+  color: #eaf6f1;
+}
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+.giant {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--f-elegant);
+  font-weight: 500;
+  font-size: clamp(60px, 15.5vw, 250px);
+  line-height: 0.85;
+  color: transparent;
+  background: linear-gradient(180deg, rgba(158, 230, 210, 0.55), rgba(158, 230, 210, 0.04));
+  -webkit-background-clip: text;
+  background-clip: text;
+  user-select: none;
+}
+.giantMask {
+  display: inline-block;
+  overflow: hidden;
+}
+.giantLetter {
+  display: inline-block;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(180deg, rgba(158, 230, 210, 0.6), rgba(158, 230, 210, 0.05));
+}
+
+.bottom {
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(169, 201, 190, 0.18);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 13.5px;
+}
+.social {
+  display: flex;
+  gap: 10px;
+}
+.social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(169, 201, 190, 0.3);
+  color: #cfe7de;
+  transition: background 0.3s, color 0.3s, transform 0.4s var(--ease);
+}
+.social a:hover {
+  background: #9ee6d2;
+  color: #012e2b;
+  transform: translateY(-3px);
+}
+.toTop {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  background: none;
+  border: 0;
+  color: #eaf6f1;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

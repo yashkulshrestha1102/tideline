@@ -1,0 +1,195 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  color: var(--foam);
+  padding: 34px var(--gutter) 40px;
+  background:
+    radial-gradient(ellipse 60% 70% at 50% 0%, #075e56 0%, rgba(7, 94, 86, 0) 70%),
+    linear-gradient(180deg, var(--deep-2) 0%, var(--deep) 55%, #013a37 100%);
+}
+.bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.topLine {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(190, 240, 225, 0.4), transparent);
+}
+.inner {
+  position: relative;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+/* ---------- Heading ---------- */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.eyebrowLine {
+  display: block;
+  width: 110px;
+  height: 1px;
+  background: rgba(220, 245, 236, 0.55);
+}
+.eyebrowText {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.42em;
+  padding-left: 0.42em;
+  text-transform: uppercase;
+  color: #dcefe8;
+}
+.title {
+  margin: 12px 0 0;
+  text-align: center;
+  font-family: var(--f-elegant);
+  font-weight: 500;
+  font-size: clamp(34px, 3.5vw, 54px);
+  line-height: 1.1;
+  color: #f3faf7;
+}
+.title em {
+  font-style: italic;
+}
+
+/* ---------- Steps ---------- */
+.steps {
+  margin-top: 22px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.step {
+  flex: 0 1 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.icon {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 35% 28%, #0e7a6e 0, #05564f 55%, #033f3b 100%);
+  border: 1px solid rgba(160, 230, 210, 0.35);
+  box-shadow: 0 0 0 6px rgba(2, 52, 50, 0.9), 0 0 30px rgba(32, 170, 150, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+}
+.icon::after {
+  content: '';
+  position: absolute;
+  inset: -7px;
+  border-radius: 50%;
+  border: 1px solid rgba(160, 230, 210, 0.35);
+  animation: tl-ring 3.2s ease-out infinite;
+}
+.step:hover .icon {
+  transform: translateY(-6px) scale(1.06);
+  box-shadow: 0 0 0 6px rgba(2, 52, 50, 0.9), 0 0 46px rgba(80, 220, 190, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+.stepTitle {
+  margin: 18px 0 0;
+  font-family: var(--f-elegant);
+  font-size: 32px;
+  font-weight: 500;
+  color: #f3faf7;
+}
+.stepText {
+  margin: 8px 0 0;
+  font-size: 15.5px;
+  line-height: 1.5;
+  color: #d6e9e2;
+}
+
+.connector {
+  flex: 1 1 60px;
+  padding-top: 31px;
+}
+.link {
+  position: relative;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(160, 230, 210, 0.15), rgba(160, 230, 210, 0.6), rgba(160, 230, 210, 0.15));
+}
+.link i {
+  position: absolute;
+  top: -2.5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #bff3e3;
+  box-shadow: 0 0 10px #8ff0d2;
+  animation: tl-travel 4.5s linear infinite;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footLine {
+  display: block;
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(220, 245, 236, 0.45));
+}
+.footLineR {
+  background: linear-gradient(90deg, rgba(220, 245, 236, 0.45), transparent);
+}
+.scrollBtn {
+  width: 28px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(230, 248, 242, 0.7);
+  display: grid;
+  place-items: center;
+  color: var(--foam);
+  animation: tl-bob 2.6s ease-in-out infinite;
+  transition: background 0.3s, color 0.3s;
+}
+.scrollBtn:hover {
+  background: var(--foam);
+  color: var(--deep);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .section {
+    padding-top: 56px;
+    padding-bottom: 48px;
+  }
+  .steps {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 20px;
+    margin-top: 40px;
+  }
+  .step {
+    flex: 1 1 40%;
+  }
+  .connector {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .step {
+    flex-basis: 100%;
+  }
+  .eyebrowLine {
+    width: 50px;
+  }
+}

@@ -1,0 +1,222 @@
+.wrap {
+  position: relative;
+  background: linear-gradient(180deg, #fcf7ee 0%, var(--cream-2) 100%);
+  overflow: hidden;
+}
+
+/* ---------- Artwork (sits behind the transparent navbar) ---------- */
+.visual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56%;
+  max-width: 980px;
+  aspect-ratio: 886 / 560;
+  z-index: 0;
+  pointer-events: none;
+}
+.parallax {
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 12%),
+    linear-gradient(180deg, #000 86%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent 0, #000 12%),
+    linear-gradient(180deg, #000 86%, transparent);
+  mask-composite: intersect;
+}
+.ribbons {
+  position: absolute;
+  inset: 0;
+  animation: tl-float 12s ease-in-out infinite;
+  transform-origin: 60% 50%;
+  will-change: transform;
+}
+.sheen {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.38) 48%, transparent 60%);
+  background-size: 250% 100%;
+  mix-blend-mode: soft-light;
+  animation: tl-sheen 7s ease-in-out infinite;
+}
+.pearl {
+  position: absolute;
+  width: var(--s);
+  height: var(--s);
+  margin: calc(var(--s) / -2) 0 0 calc(var(--s) / -2);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 250, 232, 0.95) 0, rgba(255, 236, 190, 0.45) 35%, rgba(255, 236, 190, 0) 70%);
+  mix-blend-mode: screen;
+  animation: tl-twinkle var(--d) ease-in-out infinite;
+}
+
+/* ---------- Investor fit card ---------- */
+.fitWrap {
+  position: absolute;
+  left: 56%;
+  top: 21%;
+  width: 290px;
+  pointer-events: auto;
+}
+.fitCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: rgba(250, 248, 242, 0.86);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 22px 44px -26px rgba(3, 52, 50, 0.5);
+  animation: tl-bob 6.5s ease-in-out infinite;
+}
+.fitHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink-2);
+}
+.fitValue {
+  margin: 4px 0 0 38px;
+  font-family: var(--f-elegant);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--ink-2);
+}
+.fitBars {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-top: 6px;
+}
+.track {
+  height: 5px;
+  border-radius: 9px;
+  background: #e4e6de;
+}
+.fill {
+  height: 100%;
+  border-radius: 9px;
+  transform-origin: left;
+}
+
+/* ---------- Copy ---------- */
+.hero {
+  position: relative;
+  z-index: 2;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: calc(var(--nav-h) + 42px) var(--gutter) 38px;
+  min-height: clamp(520px, 35.4vw, 600px);
+}
+.copy {
+  max-width: 660px;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: #0b3b37;
+}
+.eyebrowLine {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #0b3b37;
+  transform-origin: left;
+}
+.title {
+  margin: 20px 0 0;
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: clamp(56px, 7.3vw, 118px);
+  line-height: 0.86;
+  letter-spacing: -0.022em;
+  color: var(--ink);
+}
+.title em {
+  font-style: italic;
+}
+.mask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+}
+.lineIn {
+  display: block;
+}
+.dot {
+  display: inline-block;
+  color: var(--coral);
+  animation: tl-pulse-dot 2.8s ease-in-out infinite;
+}
+.sub {
+  margin: 30px 0 0;
+  max-width: 440px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.ctas {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.ctaMain {
+  height: 56px;
+  padding: 0 30px 0 32px;
+  font-size: 18px;
+  gap: 14px;
+}
+.ctaGhost {
+  height: 56px;
+  padding: 0 30px 0 26px;
+  font-size: 16px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 960px) {
+  .visual {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    margin-top: calc(var(--nav-h) - 10px);
+  }
+  .hero {
+    padding-top: 12px;
+    min-height: 0;
+  }
+  .fitWrap {
+    left: auto;
+    right: 16px;
+    top: 8%;
+    width: 240px;
+  }
+}
+@media (max-width: 520px) {
+  .fitWrap {
+    width: 210px;
+    right: 10px;
+  }
+  .fitCard {
+    padding: 12px 14px;
+  }
+  .fitValue {
+    font-size: 28px;
+  }
+  .sub {
+    font-size: 17px;
+  }
+}

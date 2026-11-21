@@ -1,0 +1,139 @@
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: calc(var(--nav-h) + 30px) var(--gutter) 60px;
+  gap: 30px;
+  background: linear-gradient(180deg, #fcf7ee 0%, var(--cream-2) 100%);
+}
+.art {
+  position: relative;
+  flex: 1 1 420px;
+  min-height: 520px;
+  border-radius: 32px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #03524d, #012e2b);
+}
+.artImg {
+  position: absolute;
+  inset: -5%;
+  opacity: 0.55;
+  mix-blend-mode: screen;
+  animation: tl-float 12s ease-in-out infinite;
+}
+.artCopy {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  color: #eaf6f1;
+}
+.artQuote {
+  margin: 0;
+  font-family: var(--f-display);
+  font-size: clamp(40px, 4vw, 64px);
+  line-height: 1;
+}
+.artQuote em {
+  color: #9ee6d2;
+}
+.artSub {
+  margin: 16px 0 0;
+  max-width: 380px;
+  font-size: 16px;
+  color: #b7d4ca;
+}
+.panel {
+  flex: 1 1 420px;
+  max-width: 560px;
+  margin: 0 auto;
+  align-self: center;
+  padding: clamp(20px, 3vw, 40px);
+}
+.title {
+  margin: 0;
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: clamp(42px, 4.4vw, 64px);
+  color: var(--ink);
+}
+.sub {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+.sub a {
+  color: var(--teal);
+  font-weight: 600;
+  border-bottom: 1px solid var(--mint);
+}
+.google {
+  margin-top: 32px;
+  width: 100%;
+  min-height: 54px;
+  border-radius: 999px;
+  border: 1px solid rgba(11, 47, 44, 0.18);
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font: 500 16px var(--f-sans);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: border-color 0.3s, transform 0.4s var(--ease);
+}
+.google:hover {
+  border-color: var(--mint);
+  transform: translateY(-2px);
+}
+.or {
+  margin: 26px 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+  color: #7a8f8a;
+}
+.or::before,
+.or::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pwHead {
+  display: flex;
+  justify-content: space-between;
+}
+.forgot {
+  font-size: 13px;
+  color: var(--teal);
+  font-weight: 600;
+}
+.pwWrap {
+  position: relative;
+  display: block;
+}
+.eye {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: none;
+  color: #5a7670;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .art {
+    min-height: 260px;
+  }
+}

@@ -1,0 +1,156 @@
+.section {
+  position: relative;
+  height: 320vh;
+  background:
+    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(14, 107, 98, 0.5), rgba(14, 107, 98, 0) 70%),
+    linear-gradient(180deg, #023f3b 0%, #012e2b 100%);
+  color: #eaf6f1;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(30px, 5vh, 60px);
+  padding: calc(var(--nav-h) + 10px) 0 40px;
+}
+.head {
+  padding-inline: var(--gutter);
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+.title {
+  margin: 18px 0 0;
+  max-width: 760px;
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: clamp(36px, 4.4vw, 68px);
+  line-height: 1.03;
+  color: #f3faf7;
+}
+.sub {
+  margin: 14px 0 0;
+  font-size: 16px;
+  color: #9fc2b6;
+}
+.progress {
+  margin-top: 22px;
+  width: 220px;
+  height: 2px;
+  background: rgba(158, 230, 210, 0.18);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.progress i {
+  display: block;
+  height: 100%;
+  background: #9ee6d2;
+  transform-origin: left;
+}
+.viewport {
+  padding-left: var(--gutter);
+}
+.track {
+  display: flex;
+  gap: 22px;
+  width: max-content;
+  will-change: transform;
+}
+.card {
+  position: relative;
+  width: clamp(280px, 30vw, 400px);
+  min-height: clamp(300px, 42vh, 400px);
+  padding: 30px;
+  border-radius: 28px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s var(--ease);
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+.light {
+  background: #f6f1e6;
+  color: var(--ink-2);
+}
+.dark {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(158, 230, 210, 0.18);
+  color: #eaf6f1;
+  backdrop-filter: blur(6px);
+}
+.teal {
+  background: linear-gradient(160deg, #2ba58c, #03524d);
+  color: #f6fbf8;
+}
+.num {
+  font-family: var(--f-elegant);
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+.icon {
+  margin-top: 28px;
+  width: 62px;
+  height: 62px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: rgba(158, 230, 210, 0.16);
+}
+.light .icon {
+  background: #dcefe6;
+  color: var(--teal);
+}
+.cardTitle {
+  margin: 26px 0 0;
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: clamp(26px, 2.2vw, 34px);
+  line-height: 1.1;
+}
+.cardText {
+  margin: 12px 0 0;
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+.wave {
+  margin-top: auto;
+  width: 100%;
+  height: 60px;
+  opacity: 0.35;
+}
+
+/* On phones: no pinning, a normal swipeable row */
+@media (max-width: 760px) {
+  .section {
+    height: auto;
+  }
+  .sticky {
+    position: relative;
+    height: auto;
+    padding: 90px 0 70px;
+  }
+  .viewport {
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+  }
+  .track {
+    transform: none !important;
+    padding-right: var(--gutter);
+  }
+  .card {
+    scroll-snap-align: start;
+    width: 80vw;
+  }
+  .progress {
+    display: none;
+  }
+}

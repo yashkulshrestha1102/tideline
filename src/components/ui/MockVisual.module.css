@@ -1,0 +1,358 @@
+.stage {
+  position: relative;
+  padding: 20px;
+}
+.glow {
+  position: absolute;
+  inset: -8%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 203, 168, 0.38), rgba(124, 203, 168, 0) 65%);
+  filter: blur(8px);
+}
+.window {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 50px 90px -50px rgba(3, 52, 50, 0.55);
+}
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(11, 47, 44, 0.07);
+}
+.bar span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #dfe5df;
+}
+.bar em {
+  margin-left: 10px;
+  font-style: normal;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #4a6862;
+}
+.body {
+  padding: 22px;
+  min-height: 260px;
+}
+
+/* lists */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #f6f8f4;
+  border: 1px solid rgba(11, 47, 44, 0.05);
+}
+.rowIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: #dcefe6;
+  color: var(--teal);
+  flex: none;
+}
+.rowMain {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.rowMain b {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rowMain small {
+  font-size: 12.5px;
+  color: #5a7670;
+}
+.mini {
+  width: 90px;
+  height: 6px;
+  border-radius: 9px;
+  background: #e4e6de;
+  flex: none;
+  overflow: hidden;
+}
+.mini i {
+  display: block;
+  height: 100%;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #2ba58c, #03524d);
+  transform-origin: left;
+}
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  background: linear-gradient(150deg, #0e6b62, #023f3b);
+  color: #c9f0df;
+  font-family: var(--f-display);
+  font-size: 18px;
+}
+.fit {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--teal);
+  background: #dcefe6;
+  padding: 6px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.scoreRow {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 34px;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+  color: var(--ink-2);
+  padding: 8px 0;
+}
+.scoreRow .mini {
+  width: 100%;
+}
+.scoreRow b {
+  text-align: right;
+}
+
+/* pitch */
+.screen {
+  position: relative;
+  border-radius: 14px;
+  padding: 18px;
+  background: linear-gradient(160deg, #034a45, #012e2b);
+  color: #eaf6f1;
+}
+.slideTitle {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9ee6d2;
+}
+.slideChart {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+}
+.live {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.live i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #f4715d;
+  animation: tl-pulse-dot 1.4s ease-in-out infinite;
+}
+.qa {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+.bubble {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 14px 14px 4px 14px;
+  background: #eef6f1;
+  color: var(--ink-2);
+}
+
+/* chart */
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.kpi {
+  padding: 12px;
+  border-radius: 12px;
+  background: #f6f8f4;
+}
+.kpi small {
+  display: block;
+  font-size: 11.5px;
+  color: #5a7670;
+}
+.kpi b {
+  font-family: var(--f-elegant);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.chart {
+  width: 100%;
+  height: 150px;
+  margin-top: 16px;
+}
+
+/* thesis */
+.group + .group {
+  margin-top: 16px;
+}
+.group small {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5a7670;
+}
+.chips {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  border: 1px solid rgba(11, 47, 44, 0.14);
+  color: var(--ink-2);
+}
+.chipOn {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #f6fbf8;
+}
+
+/* shield */
+.shield {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-top: 10px;
+}
+.shieldCore {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #eaf6f1;
+  background: radial-gradient(circle at 35% 28%, #0e7a6e, #033f3b);
+  box-shadow: 0 0 40px rgba(43, 165, 140, 0.45);
+}
+.orbit {
+  position: absolute;
+  inset: -16px;
+  border-radius: 50%;
+  border: 1px dashed rgba(19, 120, 106, 0.4);
+  animation: tl-spin 18s linear infinite;
+}
+.orbit2 {
+  inset: -32px;
+  animation-duration: 28s;
+  animation-direction: reverse;
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eef6f1;
+  color: var(--teal);
+  font-weight: 600;
+}
+
+/* profile */
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.field {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #f6f8f4;
+  border: 1px solid rgba(11, 47, 44, 0.06);
+}
+.field small {
+  display: block;
+  font-size: 11.5px;
+  color: #5a7670;
+}
+.field b {
+  font-size: 15px;
+  color: var(--ink-2);
+}
+.progressWrap {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+}
+.progressWrap small {
+  font-size: 12px;
+  color: #5a7670;
+}
+.progress {
+  margin-top: 8px;
+  height: 8px;
+  border-radius: 9px;
+  background: #e4e6de;
+  overflow: hidden;
+}
+.progress i {
+  display: block;
+  height: 100%;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #2ba58c, #03524d);
+  transform-origin: left;
+}
+
+@keyframes tl-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pitch {
+  display: block;
+}

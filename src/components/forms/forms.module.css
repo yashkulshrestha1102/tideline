@@ -1,0 +1,92 @@
+/* Shared form styles (contact, sign in, get matched) */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.input,
+.textarea,
+.select {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(11, 47, 44, 0.16);
+  background: rgba(255, 255, 255, 0.85);
+  font: 400 16px var(--f-sans);
+  color: var(--ink-2);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
+}
+.textarea {
+  min-height: 140px;
+  padding: 14px 18px;
+  resize: vertical;
+}
+.input:focus,
+.textarea:focus,
+.select:focus {
+  border-color: var(--mint);
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(43, 165, 140, 0.15);
+}
+.input::placeholder,
+.textarea::placeholder {
+  color: #8aa09a;
+}
+.error {
+  font-size: 13px;
+  color: #b3412f;
+}
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.chip {
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(11, 47, 44, 0.18);
+  background: #fff;
+  font: 500 15px var(--f-sans);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border-color 0.3s, transform 0.3s var(--ease);
+}
+.chip:hover {
+  transform: translateY(-2px);
+  border-color: var(--mint);
+}
+.chipOn {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #f6fbf8;
+}
+.submit {
+  height: 56px;
+  padding: 0 30px;
+  font-size: 17px;
+  border: 0;
+  justify-content: center;
+}
+.submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+}

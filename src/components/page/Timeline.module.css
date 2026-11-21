@@ -1,0 +1,116 @@
+.section {
+  color: #eaf6f1;
+  scroll-margin-top: var(--nav-h);
+  background:
+    radial-gradient(ellipse 60% 40% at 50% 0%, rgba(14, 107, 98, 0.55), rgba(14, 107, 98, 0) 70%),
+    linear-gradient(180deg, #023f3b 0%, #012e2b 100%);
+}
+.wrap {
+  position: relative;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background: rgba(158, 230, 210, 0.15);
+  border-radius: 2px;
+}
+.line i {
+  display: block;
+  height: 100%;
+  transform-origin: top;
+  background: linear-gradient(180deg, #9ee6d2, #2ba58c);
+  box-shadow: 0 0 14px rgba(158, 230, 210, 0.6);
+}
+.step {
+  position: relative;
+  display: flex;
+  width: 50%;
+}
+.left {
+  padding-right: 60px;
+  justify-content: flex-end;
+}
+.right {
+  margin-left: 50%;
+  padding-left: 60px;
+}
+.node {
+  position: absolute;
+  top: 24px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 35% 28%, #0e7a6e, #033f3b);
+  border: 1px solid rgba(160, 230, 210, 0.4);
+  box-shadow: 0 0 0 6px #012e2b, 0 0 26px rgba(43, 165, 140, 0.45);
+  color: #e9fff7;
+  z-index: 2;
+}
+.left .node {
+  right: -26px;
+}
+.right .node {
+  left: -26px;
+}
+.card {
+  width: 100%;
+  max-width: 470px;
+  padding: 30px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(158, 230, 210, 0.16);
+  backdrop-filter: blur(6px);
+  transition: border-color 0.4s, transform 0.5s var(--ease);
+}
+.card:hover {
+  border-color: rgba(158, 230, 210, 0.45);
+  transform: translateY(-4px);
+}
+.tag {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #d9b26f;
+}
+.title {
+  margin: 12px 0 0;
+  font-family: var(--f-elegant);
+  font-size: 32px;
+  font-weight: 500;
+  color: #f3faf7;
+}
+.text {
+  margin: 10px 0 0;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #b7d4ca;
+}
+
+@media (max-width: 820px) {
+  .line {
+    left: 26px;
+  }
+  .step,
+  .right {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 0 0 76px;
+    justify-content: flex-start;
+  }
+  .left .node,
+  .right .node {
+    left: 0;
+    right: auto;
+  }
+}

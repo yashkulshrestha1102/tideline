@@ -1,0 +1,69 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(4px, 1vw, 14px);
+  overflow: hidden;
+  padding: 10px 0;
+}
+.row {
+  will-change: transform;
+}
+.track {
+  display: flex;
+  width: max-content;
+  animation: tl-marquee 48s linear infinite;
+}
+.reverse {
+  animation-direction: reverse;
+}
+.wrap:hover .track {
+  animation-play-state: paused;
+}
+.group {
+  display: flex;
+  flex: none;
+}
+.itemWrap {
+  display: inline-flex;
+  align-items: center;
+}
+.item {
+  font-family: var(--f-display);
+  font-size: clamp(46px, 7.6vw, 124px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  padding: 0 0.35em;
+  transition: color 0.4s, -webkit-text-stroke-color 0.4s;
+}
+.solid {
+  color: var(--ink);
+}
+.outline {
+  color: transparent;
+  -webkit-text-stroke: 1.3px #1e8f79;
+}
+.outline:hover {
+  color: #1e8f79;
+}
+.italic {
+  font-style: italic;
+  color: #1e8f79;
+}
+.pearl {
+  width: clamp(14px, 1.4vw, 22px);
+  height: clamp(14px, 1.4vw, 22px);
+  border-radius: 50%;
+  flex: none;
+  background: radial-gradient(circle at 35% 30%, #ffffff 0, #f3ebd9 45%, #b9a37a 100%);
+  box-shadow: 0 4px 12px -4px rgba(120, 100, 60, 0.6);
+}
+
+@keyframes tl-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.3333%);
+  }
+}
