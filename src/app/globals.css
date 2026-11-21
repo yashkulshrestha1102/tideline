@@ -255,3 +255,14 @@ html.lenis body {
   margin: 0 auto;
   position: relative;
 }
+
+/* ---------- Designer cursor (see components/effects/DesignerCursor) ---------- */
+html.tl-cursor-on,
+html.tl-cursor-on * {
+  cursor: none !important;
+}
+html.tl-cursor-on input,
+html.tl-cursor-on textarea,
+html.tl-cursor-on [contenteditable='true'] {
+  cursor: text !important;
+}

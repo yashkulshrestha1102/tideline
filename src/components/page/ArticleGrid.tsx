@@ -40,6 +40,7 @@ export default function ArticleGrid({ categories, articles }: {
               <motion.article
                 layout
                 key={a.title}
+                data-cursor="Read"
                 className={`${styles.card} ${a.featured && cat === 'All' ? styles.featured : ''}`}
                 initial={{ opacity: 0, y: 40, scale: 0.96 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}

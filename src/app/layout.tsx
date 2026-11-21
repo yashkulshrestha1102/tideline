@@ -3,6 +3,8 @@ import SmoothScroll from '@/components/layout/SmoothScroll';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import WaterRipple from '@/components/effects/WaterRipple';
+import DesignerCursor from '@/components/effects/DesignerCursor';
+import { effects } from '@/lib/site';
 import './globals.css';
 
 // Fonts load straight from Google Fonts in the browser (no build-time download),
@@ -41,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <Footer />
           <WaterRipple />
+          {effects.designerCursor && <DesignerCursor />}
         </SmoothScroll>
       </body>
     </html>

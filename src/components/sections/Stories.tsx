@@ -15,7 +15,7 @@ export default function Stories() {
       <div className={styles.rail}>
         <div className={styles.track}>
           {loop.map((s, i) => (
-            <figure key={i} className={styles.card} aria-hidden={i >= stories.items.length}>
+            <figure key={i} data-cursor="Story" className={styles.card} aria-hidden={i >= stories.items.length}>
               <svg className={styles.quoteMark} width="40" height="30" viewBox="0 0 56 40" fill="none" aria-hidden="true">
                 <path d="M4 38V22C4 10 10 4 22 2M32 38V22c0-12 6-18 18-20" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
               </svg>

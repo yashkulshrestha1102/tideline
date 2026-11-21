@@ -41,7 +41,7 @@ export default function ToolkitScroller() {
         <div className={styles.viewport}>
           <motion.div className={styles.track} style={{ x }}>
             {toolkit.items.map((it, i) => (
-              <article key={it.title} className={`${styles.card} ${styles[it.tone]}`}>
+              <article key={it.title} data-cursor="Scroll" className={`${styles.card} ${styles[it.tone]}`}>
                 <span className={styles.num}>{String(i + 1).padStart(2, '0')}</span>
                 <span className={styles.icon}>
                   <Icon name={it.icon} size={30} stroke={1.5} />
