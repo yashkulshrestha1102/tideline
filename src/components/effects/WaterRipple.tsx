@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { effects } from '@/lib/site';
 import { Icon } from '@/components/ui/Icons';
 import { createRippleEngine } from './rippleEngine';
+import { createWaterGL } from './waterGL';
 import styles from './WaterRipple.module.css';
 
 const KEY = 'tl-water-ripple';
@@ -33,7 +34,10 @@ export default function WaterRipple() {
   useEffect(() => {
     if (!ready || !on || !canvasRef.current) return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const engine = createRippleEngine(canvasRef.current);
+    // realistic WebGL water first; simple rings if the device can't run WebGL2
+    const engine =
+      (effects.waterRippleStyle === 'realistic' && createWaterGL(canvasRef.current)) ||
+      createRippleEngine(canvasRef.current);
     return () => engine.destroy();
   }, [on, ready]);
 
