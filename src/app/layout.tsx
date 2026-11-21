@@ -1,32 +1,17 @@
 import type { Metadata, Viewport } from 'next';
-import { DM_Serif_Display, Cormorant_Garamond, DM_Sans } from 'next/font/google';
 import SmoothScroll from '@/components/layout/SmoothScroll';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import './globals.css';
 
-const display = DM_Serif_Display({
-  subsets: ['latin'],
-  weight: '400',
-  style: ['normal', 'italic'],
-  variable: '--font-display',
-  display: 'swap',
-});
-
-const elegant = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  style: ['normal', 'italic'],
-  variable: '--font-elegant',
-  display: 'swap',
-});
-
-const sans = DM_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-sans',
-  display: 'swap',
-});
+// Fonts load straight from Google Fonts in the browser (no build-time download),
+// so Vercel builds never fail on font fetching.
+const FONTS_URL =
+  'https://fonts.googleapis.com/css2' +
+  '?family=DM+Serif+Display:ital@0;1' +
+  '&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500' +
+  '&family=DM+Sans:wght@400;500;600;700' +
+  '&display=swap';
 
 export const metadata: Metadata = {
   title: {
@@ -43,7 +28,12 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${display.variable} ${elegant.variable} ${sans.variable}`}>
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="stylesheet" href={FONTS_URL} />
+      </head>
       <body>
         <SmoothScroll>
           <Navbar />

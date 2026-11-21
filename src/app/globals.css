@@ -19,10 +19,10 @@
   --coral: #f4715d;
   --line: rgba(11, 47, 44, 0.09);
 
-  /* Type */
-  --f-display: var(--font-display), Georgia, serif;
-  --f-elegant: var(--font-elegant), Georgia, serif;
-  --f-sans: var(--font-sans), system-ui, sans-serif;
+  /* Type (loaded in layout.tsx from Google Fonts) */
+  --f-display: 'DM Serif Display', Georgia, serif;
+  --f-elegant: 'Cormorant Garamond', Georgia, serif;
+  --f-sans: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   /* Layout */
   --gutter: clamp(20px, 4.4vw, 72px);
