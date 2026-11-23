@@ -35,7 +35,7 @@
   transition: color 0.3s;
 }
 .on .filterLabel {
-  color: #f6fbf8;
+  color: hsl(calc(var(--th, 0deg) + 144.0deg) calc(38.5% * var(--ts, 1)) 97.5%);
 }
 .grid {
   margin-top: 50px;
@@ -52,8 +52,8 @@
   transition: box-shadow 0.5s var(--ease), border-color 0.4s;
 }
 .card:hover {
-  box-shadow: 0 40px 70px -45px rgba(3, 52, 50, 0.55);
-  border-color: rgba(43, 165, 140, 0.45);
+  box-shadow: 0 40px 70px -45px hsl(calc(var(--th, 0deg) + 177.6deg) calc(89.1% * var(--ts, 1)) 10.8% / 0.55);
+  border-color: hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.45);
 }
 .featured {
   grid-column: span 2;
@@ -61,7 +61,7 @@
 .cover {
   position: relative;
   height: 190px;
-  background: linear-gradient(150deg, #0e6b62, #012e2b);
+  background: linear-gradient(150deg, hsl(calc(var(--th, 0deg) + 174.2deg) calc(76.9% * var(--ts, 1)) 23.7%), hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%));
   overflow: hidden;
 }
 .cover svg {
@@ -83,8 +83,8 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #012e2b;
-  background: #9ee6d2;
+  color: hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%);
+  background: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%);
   padding: 6px 12px;
   border-radius: 999px;
 }
@@ -107,7 +107,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 13.5px;
-  color: #5a7670;
+  color: hsl(calc(var(--th, 0deg) + 167.1deg) calc(13.5% * var(--ts, 1)) 40.8%);
 }
 .meta span {
   display: inline-flex;

@@ -4,6 +4,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import WaterRipple from '@/components/effects/WaterRipple';
 import DesignerCursor from '@/components/effects/DesignerCursor';
+import ThemeLab from '@/components/effects/ThemeLab';
 import { effects } from '@/lib/site';
 import './globals.css';
 
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#03524D',
+  themeColor: 'hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%)',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
           <WaterRipple />
           {effects.designerCursor && <DesignerCursor />}
+          {effects.themeLab && <ThemeLab />}
         </SmoothScroll>
       </body>
     </html>

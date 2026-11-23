@@ -25,12 +25,12 @@
 }
 .channel:hover {
   transform: translateX(8px);
-  border-color: rgba(43, 165, 140, 0.45);
+  border-color: hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.45);
 }
 .channel small {
   display: block;
   font-size: 12.5px;
-  color: #5a7670;
+  color: hsl(calc(var(--th, 0deg) + 167.1deg) calc(13.5% * var(--ts, 1)) 40.8%);
 }
 .channel b {
   font-size: 16px;
@@ -43,7 +43,7 @@
   border-radius: 15px;
   display: grid;
   place-items: center;
-  background: #dcefe6;
+  background: hsl(calc(var(--th, 0deg) + 151.6deg) calc(37.3% * var(--ts, 1)) 90.0%);
   color: var(--teal);
   flex: none;
 }
@@ -56,7 +56,7 @@
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.95);
-  box-shadow: 0 50px 90px -55px rgba(3, 52, 50, 0.55);
+  box-shadow: 0 50px 90px -55px hsl(calc(var(--th, 0deg) + 177.6deg) calc(89.1% * var(--ts, 1)) 10.8% / 0.55);
 }
 .form {
   display: flex;
@@ -87,6 +87,6 @@
   display: inline-grid;
   place-items: center;
   background: var(--teal);
-  color: #f6fbf8;
-  box-shadow: 0 0 0 10px rgba(43, 165, 140, 0.15);
+  color: hsl(calc(var(--th, 0deg) + 144.0deg) calc(38.5% * var(--ts, 1)) 97.5%);
+  box-shadow: 0 0 0 10px hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.15);
 }

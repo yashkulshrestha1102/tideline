@@ -16,7 +16,7 @@
   min-height: 52px;
   padding: 0 18px;
   border-radius: 14px;
-  border: 1px solid rgba(11, 47, 44, 0.16);
+  border: 1px solid hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4% / 0.16);
   background: rgba(255, 255, 255, 0.85);
   font: 400 16px var(--f-sans);
   color: var(--ink-2);
@@ -33,11 +33,11 @@
 .select:focus {
   border-color: var(--mint);
   background: #fff;
-  box-shadow: 0 0 0 4px rgba(43, 165, 140, 0.15);
+  box-shadow: 0 0 0 4px hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.15);
 }
 .input::placeholder,
 .textarea::placeholder {
-  color: #8aa09a;
+  color: hsl(calc(var(--th, 0deg) + 163.6deg) calc(10.4% * var(--ts, 1)) 58.4%);
 }
 .error {
   font-size: 13px;
@@ -57,7 +57,7 @@
   min-height: 44px;
   padding: 0 18px;
   border-radius: 999px;
-  border: 1px solid rgba(11, 47, 44, 0.18);
+  border: 1px solid hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4% / 0.18);
   background: #fff;
   font: 500 15px var(--f-sans);
   color: var(--ink-2);
@@ -71,7 +71,7 @@
 .chipOn {
   background: var(--teal);
   border-color: var(--teal);
-  color: #f6fbf8;
+  color: hsl(calc(var(--th, 0deg) + 144.0deg) calc(38.5% * var(--ts, 1)) 97.5%);
 }
 .submit {
   height: 56px;

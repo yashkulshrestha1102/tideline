@@ -16,9 +16,9 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  border: 1.5px solid rgba(19, 120, 106, 0.85);
+  border: 1.5px solid hsl(calc(var(--th, 0deg) + 171.7deg) calc(72.7% * var(--ts, 1)) 27.3% / 0.85);
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35), inset 0 0 0 1px rgba(255, 255, 255, 0.25);
-  background: rgba(158, 230, 210, 0.06);
+  background: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1% / 0.06);
   backdrop-filter: blur(0.5px);
   transition:
     width 0.45s cubic-bezier(0.22, 1, 0.36, 1),
@@ -33,7 +33,7 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #03524d;
+  background: hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%);
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75);
   transition: opacity 0.25s, width 0.3s, height 0.3s;
 }
@@ -46,22 +46,22 @@
 .hover {
   width: 66px;
   height: 66px;
-  background: rgba(43, 165, 140, 0.14);
-  border-color: rgba(43, 165, 140, 0.9);
+  background: hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.14);
+  border-color: hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.9);
 }
 
 /* over elements with data-cursor="Label" */
 .labelled {
   width: 92px;
   height: 92px;
-  background: rgba(3, 82, 77, 0.92);
+  background: hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7% / 0.92);
   border-color: transparent;
 }
 .label {
   font: 600 12px var(--f-sans);
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #eaf6f1;
+  color: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
   opacity: 0;
   transition: opacity 0.3s;
 }

@@ -41,14 +41,14 @@
 }
 .outline {
   color: transparent;
-  -webkit-text-stroke: 1.3px #1e8f79;
+  -webkit-text-stroke: 1.3px hsl(calc(var(--th, 0deg) + 168.3deg) calc(65.3% * var(--ts, 1)) 33.9%);
 }
 .outline:hover {
-  color: #1e8f79;
+  color: hsl(calc(var(--th, 0deg) + 168.3deg) calc(65.3% * var(--ts, 1)) 33.9%);
 }
 .italic {
   font-style: italic;
-  color: #1e8f79;
+  color: hsl(calc(var(--th, 0deg) + 168.3deg) calc(65.3% * var(--ts, 1)) 33.9%);
 }
 .pearl {
   width: clamp(14px, 1.4vw, 22px);

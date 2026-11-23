@@ -16,14 +16,14 @@
 }
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 40px 70px -45px rgba(3, 52, 50, 0.55);
+  box-shadow: 0 40px 70px -45px hsl(calc(var(--th, 0deg) + 177.6deg) calc(89.1% * var(--ts, 1)) 10.8% / 0.55);
 }
 .photo {
   position: relative;
   aspect-ratio: 1 / 1;
   border-radius: 18px;
   overflow: hidden;
-  background: linear-gradient(150deg, #0e6b62, #012e2b);
+  background: linear-gradient(150deg, hsl(calc(var(--th, 0deg) + 174.2deg) calc(76.9% * var(--ts, 1)) 23.7%), hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%));
   display: grid;
   place-items: center;
 }
@@ -32,7 +32,7 @@
   z-index: 1;
   font-family: var(--f-display);
   font-size: 72px;
-  color: #c9f0df;
+  color: hsl(calc(var(--th, 0deg) + 153.8deg) calc(56.5% * var(--ts, 1)) 86.5%);
 }
 .photo svg {
   position: absolute;
@@ -51,7 +51,7 @@
 .role {
   padding-inline: 8px;
   font-size: 14px;
-  color: #5a7670;
+  color: hsl(calc(var(--th, 0deg) + 167.1deg) calc(13.5% * var(--ts, 1)) 40.8%);
 }
 .note {
   margin: 30px 0 0;

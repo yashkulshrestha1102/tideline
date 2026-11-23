@@ -29,7 +29,7 @@
   color: var(--teal);
 }
 .tagDark {
-  color: #9ee6d2;
+  color: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%);
 }
 .icon {
   width: 56px;
@@ -37,12 +37,12 @@
   border-radius: 18px;
   display: grid;
   place-items: center;
-  background: #dcefe6;
+  background: hsl(calc(var(--th, 0deg) + 151.6deg) calc(37.3% * var(--ts, 1)) 90.0%);
   color: var(--teal);
 }
 .iconDark {
-  background: rgba(158, 230, 210, 0.12);
-  color: #9ee6d2;
+  background: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1% / 0.12);
+  color: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%);
 }
 .title {
   margin: 28px 0 0;
@@ -53,7 +53,7 @@
   color: var(--ink);
 }
 .titleDark {
-  color: #f3faf7;
+  color: hsl(calc(var(--th, 0deg) + 154.3deg) calc(41.2% * var(--ts, 1)) 96.7%);
 }
 .text {
   margin: 18px 0 0;
@@ -63,7 +63,7 @@
   max-width: 460px;
 }
 .textDark {
-  color: #b7d4ca;
+  color: hsl(calc(var(--th, 0deg) + 159.3deg) calc(25.2% * var(--ts, 1)) 77.5%);
 }
 .points {
   list-style: none;
@@ -95,11 +95,11 @@
   margin-top: 36px;
 }
 .btnLight {
-  background: #f6fbf8;
+  background: hsl(calc(var(--th, 0deg) + 144.0deg) calc(38.5% * var(--ts, 1)) 97.5%);
   color: var(--teal);
 }
 .btnLight:hover {
-  background: #9ee6d2;
+  background: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%);
 }
 
 @media (max-width: 860px) {

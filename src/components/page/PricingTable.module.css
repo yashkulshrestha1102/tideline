@@ -38,7 +38,7 @@
   transition: color 0.3s;
 }
 .optOn .optLabel {
-  color: #f6fbf8;
+  color: hsl(calc(var(--th, 0deg) + 144.0deg) calc(38.5% * var(--ts, 1)) 97.5%);
 }
 .grid {
   margin-top: 56px;
@@ -59,13 +59,13 @@
 }
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 40px 70px -45px rgba(3, 52, 50, 0.55);
+  box-shadow: 0 40px 70px -45px hsl(calc(var(--th, 0deg) + 177.6deg) calc(89.1% * var(--ts, 1)) 10.8% / 0.55);
 }
 .popular {
-  background: linear-gradient(160deg, #03524d 0%, #012e2b 100%);
-  color: #eaf6f1;
+  background: linear-gradient(160deg, hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%) 0%, hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%) 100%);
+  color: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
   border-color: transparent;
-  box-shadow: 0 50px 90px -50px rgba(3, 82, 77, 0.8);
+  box-shadow: 0 50px 90px -50px hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7% / 0.8);
 }
 .badge {
   position: absolute;
@@ -77,8 +77,8 @@
   text-transform: uppercase;
   padding: 6px 12px;
   border-radius: 999px;
-  background: #9ee6d2;
-  color: #012e2b;
+  background: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%);
+  color: hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%);
 }
 .name {
   margin: 0;
@@ -113,7 +113,7 @@
   list-style: none;
   margin: 24px 0 30px;
   padding: 24px 0 0;
-  border-top: 1px solid rgba(127, 160, 150, 0.25);
+  border-top: 1px solid hsl(calc(var(--th, 0deg) + 161.8deg) calc(14.8% * var(--ts, 1)) 56.3% / 0.25);
   display: flex;
   flex-direction: column;
   gap: 13px;
@@ -129,7 +129,7 @@
   flex: none;
 }
 .popular .features svg {
-  color: #9ee6d2;
+  color: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%);
 }
 .cta {
   margin-top: auto;
@@ -138,10 +138,10 @@
   font-size: 16px;
 }
 .btnLight {
-  background: #9ee6d2;
-  color: #012e2b;
+  background: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%);
+  color: hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%);
   font-weight: 600;
 }
 .btnLight:hover {
-  background: #c9f0df;
+  background: hsl(calc(var(--th, 0deg) + 153.8deg) calc(56.5% * var(--ts, 1)) 86.5%);
 }

@@ -17,6 +17,7 @@
   mask-image: radial-gradient(ellipse at 60% 40%, #000 30%, transparent 70%);
   animation: tl-float 14s ease-in-out infinite;
   pointer-events: none;
+  filter: hue-rotate(var(--th, 0deg)) saturate(var(--ts, 1));
 }
 .shell {
   position: relative;
@@ -49,7 +50,7 @@
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.95);
-  box-shadow: 0 60px 100px -60px rgba(3, 52, 50, 0.6);
+  box-shadow: 0 60px 100px -60px hsl(calc(var(--th, 0deg) + 177.6deg) calc(89.1% * var(--ts, 1)) 10.8% / 0.6);
 }
 .steps {
   list-style: none;
@@ -63,7 +64,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #8aa09a;
+  color: hsl(calc(var(--th, 0deg) + 163.6deg) calc(10.4% * var(--ts, 1)) 58.4%);
   font-size: 14px;
   font-weight: 600;
   transition: color 0.4s;
@@ -84,7 +85,7 @@
 }
 .stepOn .stepDot {
   background: var(--teal);
-  color: #f6fbf8;
+  color: hsl(calc(var(--th, 0deg) + 144.0deg) calc(38.5% * var(--ts, 1)) 97.5%);
   border-color: var(--teal);
 }
 .bar {
@@ -99,7 +100,7 @@
   height: 100%;
   transform-origin: left;
   transform: scaleX(0.25);
-  background: linear-gradient(90deg, #2ba58c, #03524d);
+  background: linear-gradient(90deg, hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8%), hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%));
 }
 .body {
   margin-top: 34px;
@@ -125,7 +126,7 @@
   gap: 6px;
   padding: 26px;
   border-radius: 22px;
-  border: 1px solid rgba(11, 47, 44, 0.14);
+  border: 1px solid hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4% / 0.14);
   background: #fff;
   text-align: left;
   cursor: pointer;
@@ -143,11 +144,11 @@
 }
 .role small {
   font-size: 14px;
-  color: #5a7670;
+  color: hsl(calc(var(--th, 0deg) + 167.1deg) calc(13.5% * var(--ts, 1)) 40.8%);
 }
 .roleOn {
   border-color: var(--teal);
-  box-shadow: 0 0 0 3px rgba(43, 165, 140, 0.25);
+  box-shadow: 0 0 0 3px hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.25);
 }
 .roleIcon {
   width: 52px;
@@ -155,13 +156,13 @@
   border-radius: 16px;
   display: grid;
   place-items: center;
-  background: #dcefe6;
+  background: hsl(calc(var(--th, 0deg) + 151.6deg) calc(37.3% * var(--ts, 1)) 90.0%);
   color: var(--teal);
 }
 .legal {
   margin-top: 22px;
   font-size: 13.5px;
-  color: #5a7670;
+  color: hsl(calc(var(--th, 0deg) + 167.1deg) calc(13.5% * var(--ts, 1)) 40.8%);
 }
 .legal a {
   color: var(--teal);
@@ -201,7 +202,7 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 1px solid rgba(43, 165, 140, 0.6);
+  border: 1px solid hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.6);
   animation: tl-radar 1.8s ease-out infinite;
 }
 .radarCore {
@@ -211,9 +212,9 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  color: #eaf6f1;
-  background: radial-gradient(circle at 35% 28%, #0e7a6e, #033f3b);
-  box-shadow: 0 0 40px rgba(43, 165, 140, 0.5);
+  color: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
+  background: radial-gradient(circle at 35% 28%, hsl(calc(var(--th, 0deg) + 173.3deg) calc(79.4% * var(--ts, 1)) 26.7%), hsl(calc(var(--th, 0deg) + 176.0deg) calc(90.9% * var(--ts, 1)) 12.9%));
+  box-shadow: 0 0 40px hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.5);
 }
 .doneTitle {
   margin: 30px 0 0;

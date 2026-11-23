@@ -2,8 +2,8 @@
   position: relative;
   overflow: hidden;
   padding: clamp(120px, 14vw, 200px) var(--gutter);
-  background: linear-gradient(160deg, #03524d 0%, #012e2b 100%);
-  color: #eaf6f1;
+  background: linear-gradient(160deg, hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%) 0%, hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%) 100%);
+  color: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
   text-align: center;
 }
 .art {
@@ -21,7 +21,7 @@
 .veil {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(1, 46, 43, 0.75), rgba(1, 46, 43, 0.2) 70%);
+  background: radial-gradient(ellipse 60% 70% at 50% 50%, hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2% / 0.75), hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2% / 0.2) 70%);
 }
 .inner {
   position: relative;
@@ -35,14 +35,14 @@
   font-size: clamp(48px, 7vw, 116px);
   line-height: 0.98;
   letter-spacing: -0.02em;
-  color: #f3faf7;
+  color: hsl(calc(var(--th, 0deg) + 154.3deg) calc(41.2% * var(--ts, 1)) 96.7%);
 }
 .text {
   margin: 28px auto 0;
   max-width: 540px;
   font-size: 18px;
   line-height: 1.6;
-  color: #b7d4ca;
+  color: hsl(calc(var(--th, 0deg) + 159.3deg) calc(25.2% * var(--ts, 1)) 77.5%);
 }
 .actions {
   margin-top: 44px;
@@ -56,20 +56,20 @@
   padding: 0 32px;
   font-size: 17px;
   font-weight: 600;
-  background: #9ee6d2;
-  color: #012e2b;
+  background: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%);
+  color: hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%);
 }
 .primary:hover {
-  background: #c9f0df;
-  box-shadow: 0 20px 40px -16px rgba(158, 230, 210, 0.6);
+  background: hsl(calc(var(--th, 0deg) + 153.8deg) calc(56.5% * var(--ts, 1)) 86.5%);
+  box-shadow: 0 20px 40px -16px hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1% / 0.6);
 }
 .secondary {
   height: 58px;
   padding: 0 30px;
   font-size: 17px;
-  border: 1px solid rgba(234, 246, 241, 0.35);
-  color: #eaf6f1;
+  border: 1px solid hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1% / 0.35);
+  color: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
 }
 .secondary:hover {
-  background: rgba(234, 246, 241, 0.1);
+  background: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1% / 0.1);
 }

@@ -7,13 +7,13 @@
   height: 100%;
   border-radius: 26px;
   overflow: hidden;
-  border: 1px solid rgba(11, 47, 44, 0.08);
+  border: 1px solid hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4% / 0.08);
   transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry));
   transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease), border-color 0.5s;
 }
 .card:hover {
-  box-shadow: 0 40px 70px -40px rgba(3, 52, 50, 0.5);
-  border-color: rgba(43, 165, 140, 0.45);
+  box-shadow: 0 40px 70px -40px hsl(calc(var(--th, 0deg) + 177.6deg) calc(89.1% * var(--ts, 1)) 10.8% / 0.5);
+  border-color: hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.45);
 }
 .glow {
   position: absolute;
@@ -22,7 +22,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s;
-  background: radial-gradient(420px circle at var(--mx) var(--my), rgba(43, 165, 140, 0.16), transparent 60%);
+  background: radial-gradient(420px circle at var(--mx) var(--my), hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.16), transparent 60%);
 }
 .card:hover .glow {
   opacity: 1;
@@ -40,16 +40,16 @@
   color: var(--ink-2);
 }
 .toneDark {
-  background: linear-gradient(160deg, #034a45 0%, #012e2b 100%);
-  color: #eaf6f1;
-  border-color: rgba(158, 230, 210, 0.14);
+  background: linear-gradient(160deg, hsl(calc(var(--th, 0deg) + 175.8deg) calc(92.2% * var(--ts, 1)) 15.1%) 0%, hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%) 100%);
+  color: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
+  border-color: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1% / 0.14);
 }
 .toneDark .glow {
-  background: radial-gradient(420px circle at var(--mx) var(--my), rgba(158, 230, 210, 0.18), transparent 60%);
+  background: radial-gradient(420px circle at var(--mx) var(--my), hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1% / 0.18), transparent 60%);
 }
 .toneTeal {
-  background: linear-gradient(160deg, #1e8f79 0%, #03524d 100%);
-  color: #f6fbf8;
+  background: linear-gradient(160deg, hsl(calc(var(--th, 0deg) + 168.3deg) calc(65.3% * var(--ts, 1)) 33.9%) 0%, hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%) 100%);
+  color: hsl(calc(var(--th, 0deg) + 144.0deg) calc(38.5% * var(--ts, 1)) 97.5%);
   border-color: transparent;
 }
 .toneTeal .glow {

@@ -12,7 +12,7 @@
   min-height: 520px;
   border-radius: 32px;
   overflow: hidden;
-  background: linear-gradient(160deg, #03524d, #012e2b);
+  background: linear-gradient(160deg, hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%), hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%));
 }
 .artImg {
   position: absolute;
@@ -26,7 +26,7 @@
   left: 40px;
   right: 40px;
   bottom: 40px;
-  color: #eaf6f1;
+  color: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
 }
 .artQuote {
   margin: 0;
@@ -35,13 +35,13 @@
   line-height: 1;
 }
 .artQuote em {
-  color: #9ee6d2;
+  color: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%);
 }
 .artSub {
   margin: 16px 0 0;
   max-width: 380px;
   font-size: 16px;
-  color: #b7d4ca;
+  color: hsl(calc(var(--th, 0deg) + 159.3deg) calc(25.2% * var(--ts, 1)) 77.5%);
 }
 .panel {
   flex: 1 1 420px;
@@ -71,7 +71,7 @@
   width: 100%;
   min-height: 54px;
   border-radius: 999px;
-  border: 1px solid rgba(11, 47, 44, 0.18);
+  border: 1px solid hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4% / 0.18);
   background: #fff;
   display: inline-flex;
   align-items: center;
@@ -128,7 +128,7 @@
   height: 44px;
   border: 0;
   background: none;
-  color: #5a7670;
+  color: hsl(calc(var(--th, 0deg) + 167.1deg) calc(13.5% * var(--ts, 1)) 40.8%);
   cursor: pointer;
 }
 

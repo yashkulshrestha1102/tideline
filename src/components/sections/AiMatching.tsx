@@ -9,7 +9,7 @@ import { ArrowRight } from '@/components/ui/Icons';
 import styles from './AiMatching.module.css';
 
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
-const barColors = ['#03524D', '#13786A', '#1E8F79', '#2BA58C', '#9AD3C1'];
+const barColors = ['hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%)', 'hsl(calc(var(--th, 0deg) + 171.7deg) calc(72.7% * var(--ts, 1)) 27.3%)', 'hsl(calc(var(--th, 0deg) + 168.3deg) calc(65.3% * var(--ts, 1)) 33.9%)', 'hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8%)', 'hsl(calc(var(--th, 0deg) + 161.1deg) calc(39.3% * var(--ts, 1)) 71.6%)'];
 const R = 56;
 const CIRC = 2 * Math.PI * R;
 
@@ -121,8 +121,8 @@ export default function AiMatching() {
                     </g>
                     <defs>
                       <linearGradient id="tlRing" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0" stopColor="#2BA58C" />
-                        <stop offset="1" stopColor="#03524D" />
+                        <stop offset="0" stopColor="hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8%)" />
+                        <stop offset="1" stopColor="hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%)" />
                       </linearGradient>
                     </defs>
                   </svg>

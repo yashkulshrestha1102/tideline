@@ -6,18 +6,18 @@
   --cream: #ffffff;
   --cream-2: #ffffff;
   --sand: #ffffff;
-  --ink: #082e2b;
-  --ink-2: #0b2f2c;
-  --muted: #3e4f4c;
-  --teal: #03524d;
-  --teal-dark: #02403c;
-  --teal-icon: #14625a;
-  --mint: #2ba58c;
-  --deep: #013432;
-  --deep-2: #023f3b;
-  --foam: #eaf6f1;
-  --coral: #f4715d;
-  --line: rgba(11, 47, 44, 0.09);
+  --ink: hsl(calc(var(--th, 0deg) + 175.3deg) calc(70.4% * var(--ts, 1)) 10.6%);
+  --ink-2: hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4%);
+  --muted: hsl(calc(var(--th, 0deg) + 169.4deg) calc(12.1% * var(--ts, 1)) 27.6%);
+  --teal: hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%);
+  --teal-dark: hsl(calc(var(--th, 0deg) + 176.1deg) calc(93.9% * var(--ts, 1)) 12.9%);
+  --teal-icon: hsl(calc(var(--th, 0deg) + 173.8deg) calc(66.1% * var(--ts, 1)) 23.1%);
+  --mint: hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8%);
+  --deep: hsl(calc(var(--th, 0deg) + 177.6deg) calc(96.2% * var(--ts, 1)) 10.4%);
+  --deep-2: hsl(calc(var(--th, 0deg) + 176.1deg) calc(93.8% * var(--ts, 1)) 12.7%);
+  --foam: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
+  --coral: var(--accent, #F4715D);
+  --line: hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4% / 0.09);
 
   /* Type (loaded in layout.tsx from Google Fonts) */
   --f-display: 'DM Serif Display', Georgia, serif;
@@ -103,12 +103,12 @@ img {
 }
 .btn-primary {
   background: var(--teal);
-  color: #f6fbf8;
-  box-shadow: 0 12px 26px -16px rgba(3, 82, 77, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  color: hsl(calc(var(--th, 0deg) + 144.0deg) calc(38.5% * var(--ts, 1)) 97.5%);
+  box-shadow: 0 12px 26px -16px hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7% / 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 .btn-primary:hover {
   background: var(--teal-dark);
-  box-shadow: 0 20px 36px -16px rgba(3, 82, 77, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 36px -16px hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7% / 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 .btn-ghost {
   border: 1px solid var(--ink-2);
@@ -181,7 +181,7 @@ html.lenis body {
   display: grid;
   place-items: center;
   pointer-events: none;
-  background: linear-gradient(160deg, #03524d 0%, #013432 100%);
+  background: linear-gradient(160deg, hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%) 0%, hsl(calc(var(--th, 0deg) + 177.6deg) calc(96.2% * var(--ts, 1)) 10.4%) 100%);
   transform-origin: top;
   animation: tl-curtain 1s cubic-bezier(0.76, 0, 0.24, 1) 0.15s both;
 }
@@ -190,7 +190,7 @@ html.lenis body {
   font-size: clamp(22px, 3vw, 36px);
   letter-spacing: 0.5em;
   padding-left: 0.5em;
-  color: #c9f0df;
+  color: hsl(calc(var(--th, 0deg) + 153.8deg) calc(56.5% * var(--ts, 1)) 86.5%);
   animation: tl-curtain-mark 0.7s ease both;
 }
 .page-enter {
@@ -219,7 +219,7 @@ html.lenis body {
   font-weight: 600;
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: #0b3b37;
+  color: hsl(calc(var(--th, 0deg) + 175.0deg) calc(68.6% * var(--ts, 1)) 13.7%);
 }
 .eyebrow::before {
   content: '';
@@ -228,7 +228,7 @@ html.lenis body {
   background: currentColor;
 }
 .eyebrow-light {
-  color: #9ee6d2;
+  color: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%);
 }
 .eyebrow-center {
   justify-content: center;
@@ -241,11 +241,11 @@ html.lenis body {
 }
 .accent {
   font-style: italic;
-  color: #13786a;
+  color: hsl(calc(var(--th, 0deg) + 171.7deg) calc(72.7% * var(--ts, 1)) 27.3%);
 }
 .accent-light {
   font-style: italic;
-  color: #9ee6d2;
+  color: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%);
 }
 .section-pad {
   padding: clamp(90px, 10vw, 150px) var(--gutter);
@@ -265,4 +265,14 @@ html.tl-cursor-on input,
 html.tl-cursor-on textarea,
 html.tl-cursor-on [contenteditable='true'] {
   cursor: text !important;
+}
+
+/* ---------- Theme Lab: recolour the artwork with the theme ---------- */
+:root {
+  --th: 0deg;
+  --ts: 1;
+  --accent: #f4715d;
+}
+img[src*='hero-ribbons'] {
+  filter: hue-rotate(var(--th, 0deg)) saturate(var(--ts, 1));
 }

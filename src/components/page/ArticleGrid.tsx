@@ -49,7 +49,7 @@ export default function ArticleGrid({ categories, articles }: {
               >
                 <div className={styles.cover} aria-hidden="true">
                   <svg viewBox="0 0 400 200" preserveAspectRatio="none">
-                    <path d={`M0 ${140 - i * 8} C 100 ${60 + i * 10}, 200 ${180 - i * 6}, 400 ${70 + i * 9}`} stroke="rgba(158,230,210,.55)" strokeWidth="26" fill="none" strokeLinecap="round" />
+                    <path d={`M0 ${140 - i * 8} C 100 ${60 + i * 10}, 200 ${180 - i * 6}, 400 ${70 + i * 9}`} stroke="hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1% / .55)" strokeWidth="26" fill="none" strokeLinecap="round" />
                     <path d={`M0 ${170 - i * 5} C 120 ${100 + i * 4}, 240 ${200 - i * 8}, 400 ${110 + i * 6}`} stroke="rgba(255,255,255,.35)" strokeWidth="2" fill="none" />
                   </svg>
                   <span className={styles.cat}>{a.cat}</span>

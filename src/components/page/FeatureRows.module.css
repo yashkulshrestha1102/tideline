@@ -29,7 +29,7 @@
   font-size: clamp(120px, 16vw, 260px);
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(19, 120, 106, 0.18);
+  -webkit-text-stroke: 1px hsl(calc(var(--th, 0deg) + 171.7deg) calc(72.7% * var(--ts, 1)) 27.3% / 0.18);
   pointer-events: none;
   user-select: none;
 }
@@ -80,7 +80,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: #dcefe6;
+  background: hsl(calc(var(--th, 0deg) + 151.6deg) calc(37.3% * var(--ts, 1)) 90.0%);
   color: var(--teal);
 }
 .visual {

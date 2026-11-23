@@ -1,6 +1,8 @@
 .band {
   padding: 70px var(--gutter);
-  background: #ffffff url('/images/stats-strip-white.webp') center / cover no-repeat;
+  position: relative;
+  isolation: isolate;
+  background: #ffffff;
   border-block: 1px solid var(--line);
 }
 .grid {
@@ -11,7 +13,7 @@
 }
 .item {
   padding: 10px 30px;
-  border-left: 1px solid rgba(11, 47, 44, 0.16);
+  border-left: 1px solid hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4% / 0.16);
 }
 .num {
   font-family: var(--f-elegant);
@@ -21,10 +23,19 @@
   color: var(--ink);
 }
 .suffix {
-  color: #13786a;
+  color: hsl(calc(var(--th, 0deg) + 171.7deg) calc(72.7% * var(--ts, 1)) 27.3%);
 }
 .label {
   margin-top: 10px;
   font-size: 15px;
   color: var(--muted);
+}
+
+.band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('/images/stats-strip-white.webp') center / cover no-repeat;
+  filter: hue-rotate(var(--th, 0deg)) saturate(var(--ts, 1));
 }

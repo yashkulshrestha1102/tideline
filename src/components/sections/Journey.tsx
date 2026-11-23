@@ -31,20 +31,20 @@ export default function Journey() {
       <svg className={styles.bg} viewBox="0 0 1440 400" preserveAspectRatio="none" fill="none" aria-hidden="true">
         <defs>
           <linearGradient id="tlArc" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="#5FD3B6" stopOpacity="0" />
-            <stop offset=".5" stopColor="#5FD3B6" stopOpacity=".35" />
-            <stop offset="1" stopColor="#5FD3B6" stopOpacity="0" />
+            <stop offset="0" stopColor="hsl(calc(var(--th, 0deg) + 165.0deg) calc(56.9% * var(--ts, 1)) 60.0%)" stopOpacity="0" />
+            <stop offset=".5" stopColor="hsl(calc(var(--th, 0deg) + 165.0deg) calc(56.9% * var(--ts, 1)) 60.0%)" stopOpacity=".35" />
+            <stop offset="1" stopColor="hsl(calc(var(--th, 0deg) + 165.0deg) calc(56.9% * var(--ts, 1)) 60.0%)" stopOpacity="0" />
           </linearGradient>
           <radialGradient id="tlPlanet" cx=".85" cy="1.05" r=".6">
-            <stop offset="0" stopColor="#2AA391" stopOpacity=".45" />
-            <stop offset="1" stopColor="#2AA391" stopOpacity="0" />
+            <stop offset="0" stopColor="hsl(calc(var(--th, 0deg) + 171.1deg) calc(59.0% * var(--ts, 1)) 40.2%)" stopOpacity=".45" />
+            <stop offset="1" stopColor="hsl(calc(var(--th, 0deg) + 171.1deg) calc(59.0% * var(--ts, 1)) 40.2%)" stopOpacity="0" />
           </radialGradient>
         </defs>
         <rect width="1440" height="400" fill="url(#tlPlanet)" />
         <path d="M-60 40 C 80 120, 140 260, 120 420" stroke="url(#tlArc)" strokeWidth="1.2" />
         <path d="M-90 80 C 60 160, 110 290, 80 420" stroke="url(#tlArc)" strokeWidth="1" />
         <path d="M1500 120 C 1340 170, 1260 290, 1250 420" stroke="url(#tlArc)" strokeWidth="1.4" />
-        <path d="M1520 170 C 1380 220, 1310 320, 1300 420" stroke="#9EF0D8" strokeOpacity=".28" strokeWidth="1" />
+        <path d="M1520 170 C 1380 220, 1310 320, 1300 420" stroke="hsl(calc(var(--th, 0deg) + 162.4deg) calc(73.2% * var(--ts, 1)) 78.0%)" strokeOpacity=".28" strokeWidth="1" />
       </svg>
       <div className={styles.topLine} />
 
