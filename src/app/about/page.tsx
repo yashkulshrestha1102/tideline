@@ -10,7 +10,7 @@ import { aboutPage as p } from '@/lib/pages';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Why Tideline exists and the principles behind how we match founders and investors.',
+  description: 'Why Raisedesk exists and the principles behind how we match founders and investors.',
 };
 
 export default function AboutPage() {

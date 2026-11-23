@@ -6,7 +6,8 @@ export type NavLink = { label: string; href: string };
 export type NavGroup = { label: string; items: NavLink[] };
 
 export const brand = {
-  name: 'Tideline',
+  name: 'Raisedesk',
+  company: 'Businezexcellence StartX LLP',
 };
 
 export const navGroups: NavGroup[] = [
@@ -127,9 +128,9 @@ export const marqueeRows = [
 ] as const;
 
 export const statement = {
-  eyebrow: 'Why Tideline',
+  eyebrow: 'Why Raisedesk',
   // Words wrapped in *asterisks* get the sea-green accent
-  text: 'Most founders spend months chasing investors who were never a fit. Tideline reads your company the way an investor would — and points you to the *capital* *already* *looking* *for* *you.*',
+  text: 'Most founders spend months chasing investors who were never a fit. Raisedesk reads your company the way an investor would — and points you to the *capital* *already* *looking* *for* *you.*',
 };
 
 export const aiMatching = {
@@ -185,7 +186,7 @@ export const audience = {
 export const toolkit = {
   eyebrow: 'The founder toolkit',
   title: 'Everything the raise needs, *nothing* *it* *doesn’t.*',
-  text: 'Scroll sideways through the tools built into every Tideline workspace.',
+  text: 'Scroll sideways through the tools built into every Raisedesk workspace.',
   items: [
     { icon: 'video', title: 'Virtual pitch room', text: 'Interactive slides, live Q&A and page-by-page engagement analytics after every session.', tone: 'dark' },
     { icon: 'lock', title: 'Secure data room', text: 'Permissioned documents with watermarking, access logs and a real-time diligence checklist.', tone: 'light' },

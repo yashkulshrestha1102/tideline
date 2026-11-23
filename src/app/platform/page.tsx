@@ -9,7 +9,7 @@ import { platformPage as p } from '@/lib/pages';
 
 export const metadata: Metadata = {
   title: 'The Platform',
-  description: 'How Tideline takes founders from profile to term sheet with AI matching, pitch rooms and secure data rooms.',
+  description: 'How Raisedesk takes founders from profile to term sheet with AI matching, pitch rooms and secure data rooms.',
 };
 
 export default function PlatformPage() {

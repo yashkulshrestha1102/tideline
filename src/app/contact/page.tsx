@@ -6,7 +6,7 @@ import { contactPage as p } from '@/lib/pages';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Get in touch with the Tideline team.',
+  description: 'Get in touch with the Raisedesk team.',
 };
 
 export default function ContactPage() {

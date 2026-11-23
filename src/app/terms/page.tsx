@@ -4,8 +4,8 @@ import LegalPage from '@/components/page/LegalPage';
 export const metadata: Metadata = { title: 'Terms of use' };
 
 const sections = [
-  { title: 'Acceptance', body: 'By creating an account or using Tideline you agree to these terms. If you use Tideline on behalf of an organisation, you confirm you are authorised to bind it.' },
-  { title: 'The service', body: 'Tideline provides software to help founders and investors discover and connect with each other. We are not a broker, investment adviser or fund, and nothing on the platform is investment advice.' },
+  { title: 'Acceptance', body: 'By creating an account or using Raisedesk you agree to these terms. If you use Raisedesk on behalf of an organisation, you confirm you are authorised to bind it.' },
+  { title: 'The service', body: 'Raisedesk provides software to help founders and investors discover and connect with each other. We are not a broker, investment adviser or fund, and nothing on the platform is investment advice.' },
   { title: 'Your account', body: 'Keep your login details secure and the information you provide accurate. You are responsible for activity under your account.' },
   { title: 'Content you share', body: 'You keep ownership of everything you upload. You grant us a limited licence to host and display it only as needed to run the service for you.' },
   { title: 'Acceptable use', body: 'Do not misuse the platform, misrepresent yourself or your company, scrape data, or share another user’s confidential information without permission.' },
@@ -20,7 +20,7 @@ export default function TermsPage() {
       crumb="Terms of use"
       title="Terms of *use.*"
       updated="[Date]"
-      intro="The rules for using Tideline. Please read them carefully."
+      intro="The rules for using Raisedesk. Please read them carefully."
       sections={sections}
     />
   );

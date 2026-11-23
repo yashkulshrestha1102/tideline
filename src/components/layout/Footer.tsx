@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useLenis } from 'lenis/react';
 import { brand, footerGroups } from '@/lib/site';
-import { ArrowRight, Icon, LogoMark } from '@/components/ui/Icons';
+import { ArrowRight, Icon } from '@/components/ui/Icons';
+import Logo from '@/components/ui/Logo';
 import styles from './Footer.module.css';
 
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
@@ -22,11 +23,10 @@ export default function Footer() {
         <div className={styles.top}>
           <div className={styles.brandCol}>
             <Link href="/" className={styles.logo} aria-label={`${brand.name} home`}>
-              <LogoMark light />
-              <span className={styles.wordmark}>{brand.name.toUpperCase()}</span>
+              <Logo light id="rd-foot" />
             </Link>
             <p className={styles.tagline}>
-              AI-guided fundraising for founders and investors who would rather build than chase.
+              AI-guided fundraising for founders and investors who would rather build than chase. A product of {brand.company}.
             </p>
 
             <form
@@ -108,7 +108,7 @@ export default function Footer() {
         </motion.div>
 
         <div className={styles.bottom}>
-          <span>© {new Date().getFullYear()} {brand.name}. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} {brand.name} — a product of {brand.company}. All rights reserved.</span>
           <div className={styles.social}>
             <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <Icon name="linkedin" size={18} />

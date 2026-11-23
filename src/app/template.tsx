@@ -4,7 +4,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
   return (
     <>
       <div className="page-curtain" aria-hidden="true">
-        <span className="page-curtain-mark">TIDELINE</span>
+        <span className="page-curtain-mark">RAISEDESK</span>
       </div>
       <div className="page-enter">{children}</div>
     </>

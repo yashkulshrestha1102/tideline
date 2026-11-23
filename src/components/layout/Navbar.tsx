@@ -6,7 +6,8 @@ import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion';
 import { useLenis } from 'lenis/react';
 import { brand, navGroups } from '@/lib/site';
-import { ArrowRight, ChevronDown, LogoMark, MenuIcon } from '@/components/ui/Icons';
+import { ArrowRight, ChevronDown, MenuIcon } from '@/components/ui/Icons';
+import Logo from '@/components/ui/Logo';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
@@ -57,8 +58,7 @@ export default function Navbar() {
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
       >
         <Link href="/" className={styles.logo} aria-label={`${brand.name} home`}>
-          <LogoMark />
-          <span className={styles.wordmark}>{brand.name.toUpperCase()}</span>
+          <Logo id="rd-nav" />
         </Link>
 
         <nav className={styles.links} aria-label="Primary">

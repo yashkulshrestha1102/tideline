@@ -1,4 +1,6 @@
-# Tideline — Website (Next.js)
+# Raisedesk — Website (Next.js)
+
+A product of **Businezexcellence StartX LLP**.
 
 **Full website:** 12 pages, navigation, page transitions and scroll animations.
 
@@ -68,7 +70,7 @@ npm start
 ```powershell
 git init
 git add .
-git commit -m "Tideline: step 1 - navbar, hero, stats, journey"
+git commit -m "Raisedesk: step 1 - navbar, hero, stats, journey"
 git branch -M main
 git remote add origin https://github.com/<your-username>/tideline.git
 git push -u origin main

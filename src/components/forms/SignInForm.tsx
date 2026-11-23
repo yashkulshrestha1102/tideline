@@ -58,7 +58,7 @@ export default function SignInForm() {
       >
         <h1 className={styles.title}>Welcome back</h1>
         <p className={styles.sub}>
-          New to Tideline? <Link href="/get-matched">Create your profile</Link>
+          New to Raisedesk? <Link href="/get-matched">Create your profile</Link>
         </p>
 
         <button type="button" className={styles.google}>

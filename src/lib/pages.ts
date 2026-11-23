@@ -20,7 +20,7 @@ export const platformPage = {
   timeline: {
     eyebrow: 'How it works',
     title: 'Six steps from *idea* to *investment.*',
-    text: 'A typical round on Tideline moves from profile to close in about six weeks.',
+    text: 'A typical round on Raisedesk moves from profile to close in about six weeks.',
     steps: [
       { icon: 'bulb', tag: 'Day 1', title: 'Build your profile', text: 'A guided wizard captures your vision, traction, metrics and round — no deck needed to start.' },
       { icon: 'search', tag: 'Day 2', title: 'Get your shortlist', text: 'Our AI scores every investor on stage, sector, ticket size, geography and ESG fit.' },
@@ -49,9 +49,9 @@ export const platformPage = {
     },
   ] satisfies FeatureRow[],
   faq: [
-    { q: 'Who can join Tideline?', a: 'Founders raising from pre-seed to Series A, and investors — angels, funds, family offices and corporate VCs — who want curated, thesis-matched deal flow.' },
+    { q: 'Who can join Raisedesk?', a: 'Founders raising from pre-seed to Series A, and investors — angels, funds, family offices and corporate VCs — who want curated, thesis-matched deal flow.' },
     { q: 'How is my data used for matching?', a: 'Only to compute fit scores and show you relevant investors. You control what investors can see before and after an introduction.' },
-    { q: 'Can I use Tideline alongside my own network?', a: 'Yes. You can add investors you already know and track every conversation in one pipeline.' },
+    { q: 'Can I use Raisedesk alongside my own network?', a: 'Yes. You can add investors you already know and track every conversation in one pipeline.' },
   ],
 };
 
@@ -148,7 +148,7 @@ export const investorsPage = {
     },
   ] satisfies FeatureRow[],
   benefits: {
-    eyebrow: 'Why investors use Tideline',
+    eyebrow: 'Why investors use Raisedesk',
     title: 'Less noise. *Better* *signal.*',
     items: [
       { icon: 'filter', title: 'Pre-screened', text: 'Every company completes a structured profile before it reaches you.' },
@@ -166,7 +166,7 @@ export const insightsPage = {
   hero: {
     crumb: 'Insights',
     eyebrow: 'Insights',
-    title: 'Notes from the *tideline.*',
+    title: 'Notes from the *desk.*',
     text: 'Guides, data and stories on raising capital — written for founders and investors.',
   },
   categories: ['All', 'Fundraising', 'Investors', 'Finance', 'ESG'],
@@ -251,12 +251,12 @@ export const pricingPage = {
 export const aboutPage = {
   hero: {
     crumb: 'About',
-    eyebrow: 'About Tideline',
+    eyebrow: 'About Raisedesk',
     title: 'We help capital find its *direction.*',
-    text: 'Tideline exists so great companies don’t stall for want of the right investor — and great investors don’t miss them.',
+    text: 'Raisedesk is built by Businezexcellence StartX LLP so great companies don’t stall for want of the right investor — and great investors don’t miss them.',
   },
   mission:
-    'Fundraising is still built on who you know. We think it should be built on *fit* — on whether a founder and an investor truly belong in the same round. Tideline uses AI to make that fit *visible*, *explainable* and *fast.*',
+    'Fundraising is still built on who you know. We think it should be built on *fit* — on whether a founder and an investor truly belong in the same round. Raisedesk uses AI to make that fit *visible*, *explainable* and *fast.*',
   values: {
     eyebrow: 'What we believe',
     title: 'Principles that *guide* us.',

@@ -4,7 +4,7 @@ import LegalPage from '@/components/page/LegalPage';
 export const metadata: Metadata = { title: 'Privacy policy' };
 
 const sections = [
-  { title: 'Who we are', body: '[Company legal name] ("Tideline", "we", "us") operates this website and platform. This policy explains how we collect, use and protect personal data.' },
+  { title: 'Who we are', body: 'Businezexcellence StartX LLP ("Raisedesk", "we", "us") operates this website and platform. This policy explains how we collect, use and protect personal data.' },
   { title: 'Data we collect', body: 'Account details (name, email, company), profile information you provide for matching, documents you upload to a data room, and usage data such as pages visited and device information.' },
   { title: 'How we use data', body: 'To create and maintain your account, compute match scores, arrange introductions you approve, operate the pitch and data rooms, improve the service and communicate with you.' },
   { title: 'Sharing', body: 'Investors and founders only see the information you choose to share. We use trusted service providers (hosting, email, analytics) under contract, and never sell personal data.' },
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
       crumb="Privacy policy"
       title="Privacy *policy.*"
       updated="[Date]"
-      intro="How Tideline collects, uses and protects your personal data."
+      intro="How Raisedesk collects, uses and protects your personal data."
       sections={sections}
     />
   );

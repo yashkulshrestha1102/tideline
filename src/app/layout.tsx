@@ -17,12 +17,15 @@ const FONTS_URL =
   '&display=swap';
 
 export const metadata: Metadata = {
+  applicationName: 'Raisedesk',
+  authors: [{ name: 'Businezexcellence StartX LLP' }],
+  publisher: 'Businezexcellence StartX LLP',
   title: {
-    default: 'Tideline — Capital finds its direction',
-    template: '%s · Tideline',
+    default: 'Raisedesk — Capital finds its direction',
+    template: '%s · Raisedesk',
   },
   description:
-    'Tideline connects ambitious founders with aligned investors through the power of AI.',
+    'Raisedesk connects ambitious founders with aligned investors through the power of AI.',
 };
 
 export const viewport: Viewport = {
