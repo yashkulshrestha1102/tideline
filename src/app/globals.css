@@ -3,9 +3,9 @@
    ============================================================ */
 :root {
   /* Colors */
-  --cream: #fbf6ec;
-  --cream-2: #f6f1e6;
-  --sand: #f2eee2;
+  --cream: #ffffff;
+  --cream-2: #ffffff;
+  --sand: #ffffff;
   --ink: #082e2b;
   --ink-2: #0b2f2c;
   --muted: #3e4f4c;
@@ -15,7 +15,7 @@
   --mint: #2ba58c;
   --deep: #013432;
   --deep-2: #023f3b;
-  --foam: #eaf6f1;
+  --foam: #ffffff;
   --coral: #f4715d;
   --line: rgba(11, 47, 44, 0.09);
 
