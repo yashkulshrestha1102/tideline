@@ -25,7 +25,7 @@ const pearls = [
 
 const fitBars = [
   { w: 72, c: 'hsl(calc(var(--th, 0deg) + 161.1deg) calc(39.3% * var(--ts, 1)) 71.6%)' },
-  { w: 80, c: 'hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8%)' },
+  { w: 80, c: 'var(--mint)' },
   { w: 66, c: 'hsl(calc(var(--th, 0deg) + 168.3deg) calc(65.3% * var(--ts, 1)) 33.9%)' },
   { w: 52, c: 'hsl(calc(var(--th, 0deg) + 171.7deg) calc(72.7% * var(--ts, 1)) 27.3%)' },
 ];
@@ -50,7 +50,7 @@ export default function Hero() {
   });
 
   return (
-    <div ref={ref} className={styles.wrap} id="top">
+    <div data-section="hero" ref={ref} className={styles.wrap} id="top">
       {/* ---------- Artwork ---------- */}
       <motion.div
         className={styles.visual}

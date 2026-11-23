@@ -25,8 +25,8 @@
   width: clamp(300px, 32vw, 440px);
   padding: 32px;
   border-radius: 26px;
-  background: #fff;
-  border: 1px solid hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4% / 0.08);
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--ink-2) 8%, transparent);
   box-shadow: 0 30px 60px -45px hsl(calc(var(--th, 0deg) + 177.6deg) calc(89.1% * var(--ts, 1)) 10.8% / 0.45);
   display: flex;
   flex-direction: column;
@@ -60,7 +60,7 @@
 }
 .by small {
   font-size: 13px;
-  color: hsl(calc(var(--th, 0deg) + 167.1deg) calc(13.5% * var(--ts, 1)) 40.8%);
+  color: var(--subtle);
 }
 .avatar {
   width: 42px;
@@ -68,7 +68,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: linear-gradient(150deg, hsl(calc(var(--th, 0deg) + 174.2deg) calc(76.9% * var(--ts, 1)) 23.7%), hsl(calc(var(--th, 0deg) + 176.1deg) calc(93.8% * var(--ts, 1)) 12.7%));
+  background: linear-gradient(150deg, hsl(calc(var(--th, 0deg) + 174.2deg) calc(76.9% * var(--ts, 1)) 23.7%), var(--deep-2));
   color: hsl(calc(var(--th, 0deg) + 153.8deg) calc(56.5% * var(--ts, 1)) 86.5%);
   font-family: var(--f-display);
   flex: none;
@@ -78,7 +78,7 @@
   font-size: 12.5px;
   font-weight: 700;
   color: var(--teal);
-  background: hsl(calc(var(--th, 0deg) + 151.6deg) calc(37.3% * var(--ts, 1)) 90.0%);
+  background: var(--tint);
   padding: 6px 10px;
   border-radius: 999px;
   white-space: nowrap;

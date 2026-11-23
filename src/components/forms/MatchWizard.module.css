@@ -3,7 +3,7 @@
   overflow: hidden;
   min-height: 100vh;
   padding: calc(var(--nav-h) + 50px) var(--gutter) 90px;
-  background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg) 100%);
 }
 .bgRibbon {
   position: absolute;
@@ -46,7 +46,7 @@
   margin-top: 44px;
   padding: clamp(24px, 3.4vw, 48px);
   border-radius: 32px;
-  background: rgba(255, 255, 255, 0.82);
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.95);
@@ -64,7 +64,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: hsl(calc(var(--th, 0deg) + 163.6deg) calc(10.4% * var(--ts, 1)) 58.4%);
+  color: var(--subtle-4);
   font-size: 14px;
   font-weight: 600;
   transition: color 0.4s;
@@ -92,7 +92,7 @@
   margin-top: 18px;
   height: 4px;
   border-radius: 4px;
-  background: #e4e6de;
+  background: var(--tint-5);
   overflow: hidden;
 }
 .bar i {
@@ -100,7 +100,7 @@
   height: 100%;
   transform-origin: left;
   transform: scaleX(0.25);
-  background: linear-gradient(90deg, hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8%), hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%));
+  background: linear-gradient(90deg, var(--mint), var(--teal));
 }
 .body {
   margin-top: 34px;
@@ -126,8 +126,8 @@
   gap: 6px;
   padding: 26px;
   border-radius: 22px;
-  border: 1px solid hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4% / 0.14);
-  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--ink-2) 14%, transparent);
+  background: var(--surface);
   text-align: left;
   cursor: pointer;
   font-family: var(--f-sans);
@@ -144,7 +144,7 @@
 }
 .role small {
   font-size: 14px;
-  color: hsl(calc(var(--th, 0deg) + 167.1deg) calc(13.5% * var(--ts, 1)) 40.8%);
+  color: var(--subtle);
 }
 .roleOn {
   border-color: var(--teal);
@@ -156,13 +156,13 @@
   border-radius: 16px;
   display: grid;
   place-items: center;
-  background: hsl(calc(var(--th, 0deg) + 151.6deg) calc(37.3% * var(--ts, 1)) 90.0%);
+  background: var(--tint);
   color: var(--teal);
 }
 .legal {
   margin-top: 22px;
   font-size: 13.5px;
-  color: hsl(calc(var(--th, 0deg) + 167.1deg) calc(13.5% * var(--ts, 1)) 40.8%);
+  color: var(--subtle);
 }
 .legal a {
   color: var(--teal);
@@ -212,7 +212,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  color: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
+  color: var(--on-deep);
   background: radial-gradient(circle at 35% 28%, hsl(calc(var(--th, 0deg) + 173.3deg) calc(79.4% * var(--ts, 1)) 26.7%), hsl(calc(var(--th, 0deg) + 176.0deg) calc(90.9% * var(--ts, 1)) 12.9%));
   box-shadow: 0 0 40px hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.5);
 }

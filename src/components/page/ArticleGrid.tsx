@@ -16,7 +16,7 @@ export default function ArticleGrid({ categories, articles }: {
   const shown = articles.filter((a) => cat === 'All' || a.cat === cat);
 
   return (
-    <section className={`section-pad ${styles.section}`}>
+    <section data-section="articles" className={`section-pad ${styles.section}`}>
       <div className="inner">
         <div className={styles.filters} role="tablist" aria-label="Filter articles">
           {categories.map((c) => (

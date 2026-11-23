@@ -15,7 +15,7 @@ const icons = {
 
 export default function StatsStrip() {
   return (
-    <motion.section
+    <motion.section data-section="stats"
       className={styles.strip}
       aria-label="Platform at a glance"
       initial={{ opacity: 0, y: 20 }}

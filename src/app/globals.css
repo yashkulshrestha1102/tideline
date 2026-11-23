@@ -2,22 +2,50 @@
    Raisedesk — design tokens & global styles
    ============================================================ */
 :root {
-  /* Colors */
-  --cream: #ffffff;
-  --cream-2: #ffffff;
-  --sand: #ffffff;
+  /* Colors — every role can be changed live from the Theme Lab */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --cream: var(--bg);
+  --cream-2: var(--bg);
+  --sand: var(--bg);
   --ink: hsl(calc(var(--th, 0deg) + 175.3deg) calc(70.4% * var(--ts, 1)) 10.6%);
   --ink-2: hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4%);
+  --ink-3: hsl(calc(var(--th, 0deg) + 175.0deg) calc(68.6% * var(--ts, 1)) 13.7%);
   --muted: hsl(calc(var(--th, 0deg) + 169.4deg) calc(12.1% * var(--ts, 1)) 27.6%);
+  --subtle: hsl(calc(var(--th, 0deg) + 167.1deg) calc(13.5% * var(--ts, 1)) 40.8%);
+  --subtle-2: hsl(calc(var(--th, 0deg) + 168.0deg) calc(16.9% * var(--ts, 1)) 34.9%);
+  --subtle-3: hsl(calc(var(--th, 0deg) + 165.7deg) calc(8.6% * var(--ts, 1)) 52.0%);
+  --subtle-4: hsl(calc(var(--th, 0deg) + 163.6deg) calc(10.4% * var(--ts, 1)) 58.4%);
   --teal: hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%);
   --teal-dark: hsl(calc(var(--th, 0deg) + 176.1deg) calc(93.9% * var(--ts, 1)) 12.9%);
   --teal-icon: hsl(calc(var(--th, 0deg) + 173.8deg) calc(66.1% * var(--ts, 1)) 23.1%);
   --mint: hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8%);
   --deep: hsl(calc(var(--th, 0deg) + 177.6deg) calc(96.2% * var(--ts, 1)) 10.4%);
   --deep-2: hsl(calc(var(--th, 0deg) + 176.1deg) calc(93.8% * var(--ts, 1)) 12.7%);
-  --foam: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
-  --coral: var(--accent, #F4715D);
-  --line: hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4% / 0.09);
+  --deep-3: hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%);
+  --deep-4: hsl(calc(var(--th, 0deg) + 176.0deg) calc(93.8% * var(--ts, 1)) 6.3%);
+  --deep-5: hsl(calc(var(--th, 0deg) + 175.8deg) calc(92.2% * var(--ts, 1)) 15.1%);
+  --deep-6: hsl(calc(var(--th, 0deg) + 176.8deg) calc(96.6% * var(--ts, 1)) 11.6%);
+  --on-deep: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
+  --on-deep-2: hsl(calc(var(--th, 0deg) + 154.3deg) calc(41.2% * var(--ts, 1)) 96.7%);
+  --on-deep-3: hsl(calc(var(--th, 0deg) + 158.2deg) calc(100.0% * var(--ts, 1)) 95.7%);
+  --odm: hsl(calc(var(--th, 0deg) + 159.3deg) calc(25.2% * var(--ts, 1)) 77.5%);
+  --odm-2: hsl(calc(var(--th, 0deg) + 159.4deg) calc(22.9% * var(--ts, 1)) 72.5%);
+  --odm-3: hsl(calc(var(--th, 0deg) + 157.9deg) calc(30.2% * var(--ts, 1)) 87.6%);
+  --odm-4: hsl(calc(var(--th, 0deg) + 159.4deg) calc(22.3% * var(--ts, 1)) 69.2%);
+  --odm-5: hsl(calc(var(--th, 0deg) + 157.5deg) calc(33.3% * var(--ts, 1)) 85.9%);
+  --odm-6: hsl(calc(var(--th, 0deg) + 157.9deg) calc(37.3% * var(--ts, 1)) 90.0%);
+  --odm-7: hsl(calc(var(--th, 0deg) + 162.2deg) calc(14.7% * var(--ts, 1)) 50.8%);
+  --tint: hsl(calc(var(--th, 0deg) + 151.6deg) calc(37.3% * var(--ts, 1)) 90.0%);
+  --tint-2: hsl(calc(var(--th, 0deg) + 142.5deg) calc(30.8% * var(--ts, 1)) 94.9%);
+  --tint-3: hsl(calc(var(--th, 0deg) + 146.7deg) calc(27.3% * var(--ts, 1)) 93.5%);
+  --tint-4: #f6f8f4;
+  --tint-5: #e4e6de;
+  --tint-6: #dfe5df;
+  --accent: #f4715d;
+  --foam: var(--on-deep);
+  --coral: var(--accent);
+  --line: color-mix(in srgb, var(--ink-2) 9%, transparent);
 
   /* Type (loaded in layout.tsx from Google Fonts) */
   --f-display: 'DM Serif Display', Georgia, serif;
@@ -181,7 +209,7 @@ html.lenis body {
   display: grid;
   place-items: center;
   pointer-events: none;
-  background: linear-gradient(160deg, hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%) 0%, hsl(calc(var(--th, 0deg) + 177.6deg) calc(96.2% * var(--ts, 1)) 10.4%) 100%);
+  background: linear-gradient(160deg, var(--teal) 0%, var(--deep) 100%);
   transform-origin: top;
   animation: tl-curtain 1s cubic-bezier(0.76, 0, 0.24, 1) 0.15s both;
 }
@@ -219,7 +247,7 @@ html.lenis body {
   font-weight: 600;
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: hsl(calc(var(--th, 0deg) + 175.0deg) calc(68.6% * var(--ts, 1)) 13.7%);
+  color: var(--ink-3);
 }
 .eyebrow::before {
   content: '';
@@ -261,18 +289,38 @@ html.tl-cursor-on,
 html.tl-cursor-on * {
   cursor: none !important;
 }
-html.tl-cursor-on input,
+html.tl-cursor-on input:not([type='range']):not([type='color']):not([type='checkbox']):not([type='radio']):not([type='button']):not([type='submit']),
 html.tl-cursor-on textarea,
 html.tl-cursor-on [contenteditable='true'] {
   cursor: text !important;
 }
 
-/* ---------- Theme Lab: recolour the artwork with the theme ---------- */
+/* ---------- Theme Lab: artwork follows the theme ---------- */
 :root {
   --th: 0deg;
   --ts: 1;
-  --accent: #f4715d;
 }
 img[src*='hero-ribbons'] {
   filter: hue-rotate(var(--th, 0deg)) saturate(var(--ts, 1));
+}
+/* light non-white page → transparent artwork; dark page → glowing artwork */
+html.rd-art-light img[src*='hero-ribbons'] {
+  content: url('/images/hero-ribbons-clear.webp');
+}
+html.rd-art-dark img[src*='hero-ribbons'] {
+  content: url('/images/hero-ribbons-dark.webp');
+}
+html.rd-art-light [data-section='stats']::before,
+html.rd-art-light [data-section='numbers']::before {
+  background-image: url('/images/stats-strip-clear.webp');
+}
+html.rd-art-dark [data-section='stats']::before,
+html.rd-art-dark [data-section='numbers']::before {
+  background-image: url('/images/stats-strip-dark.webp');
+}
+html.rd-art-light [data-art='ribbon-bg'] {
+  background-image: url('/images/hero-ribbons-clear.webp') !important;
+}
+html.rd-art-dark [data-art='ribbon-bg'] {
+  background-image: url('/images/hero-ribbons-dark.webp') !important;
 }

@@ -48,7 +48,7 @@ export default function Navbar() {
     });
 
   return (
-    <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
+    <header data-section="navbar" className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <motion.div className={styles.progress} style={{ scaleX: progress }} aria-hidden="true" />
 
       <motion.div

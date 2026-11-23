@@ -22,7 +22,7 @@
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: hsl(calc(var(--th, 0deg) + 167.1deg) calc(13.5% * var(--ts, 1)) 40.8%);
+  color: var(--subtle);
   margin-bottom: 10px;
 }
 .toc a {
@@ -33,7 +33,7 @@
   transition: background 0.3s, padding 0.3s var(--ease);
 }
 .toc a:hover {
-  background: hsl(calc(var(--th, 0deg) + 146.7deg) calc(27.3% * var(--ts, 1)) 93.5%);
+  background: var(--tint-3);
   padding-left: 20px;
 }
 .toc a span {
@@ -73,7 +73,7 @@
 .note {
   margin-top: 30px;
   font-size: 13.5px;
-  color: #7a8f8a;
+  color: var(--subtle-3);
 }
 
 @media (max-width: 860px) {

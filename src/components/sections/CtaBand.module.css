@@ -2,8 +2,8 @@
   position: relative;
   overflow: hidden;
   padding: clamp(120px, 14vw, 200px) var(--gutter);
-  background: linear-gradient(160deg, hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%) 0%, hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%) 100%);
-  color: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
+  background: linear-gradient(160deg, var(--teal) 0%, var(--deep-3) 100%);
+  color: var(--on-deep);
   text-align: center;
 }
 .art {
@@ -35,14 +35,14 @@
   font-size: clamp(48px, 7vw, 116px);
   line-height: 0.98;
   letter-spacing: -0.02em;
-  color: hsl(calc(var(--th, 0deg) + 154.3deg) calc(41.2% * var(--ts, 1)) 96.7%);
+  color: var(--on-deep-2);
 }
 .text {
   margin: 28px auto 0;
   max-width: 540px;
   font-size: 18px;
   line-height: 1.6;
-  color: hsl(calc(var(--th, 0deg) + 159.3deg) calc(25.2% * var(--ts, 1)) 77.5%);
+  color: var(--odm);
 }
 .actions {
   margin-top: 44px;
@@ -57,7 +57,7 @@
   font-size: 17px;
   font-weight: 600;
   background: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%);
-  color: hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%);
+  color: var(--deep-3);
 }
 .primary:hover {
   background: hsl(calc(var(--th, 0deg) + 153.8deg) calc(56.5% * var(--ts, 1)) 86.5%);
@@ -68,7 +68,7 @@
   padding: 0 30px;
   font-size: 17px;
   border: 1px solid hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1% / 0.35);
-  color: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
+  color: var(--on-deep);
 }
 .secondary:hover {
   background: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1% / 0.1);

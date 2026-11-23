@@ -1,5 +1,5 @@
 .section {
-  background: linear-gradient(180deg, #ffffff 0%, var(--cream) 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--cream) 100%);
 }
 .grid {
   margin-top: 70px;
@@ -37,7 +37,7 @@
   border-radius: 18px;
   display: grid;
   place-items: center;
-  background: hsl(calc(var(--th, 0deg) + 151.6deg) calc(37.3% * var(--ts, 1)) 90.0%);
+  background: var(--tint);
   color: var(--teal);
 }
 .iconDark {
@@ -53,7 +53,7 @@
   color: var(--ink);
 }
 .titleDark {
-  color: hsl(calc(var(--th, 0deg) + 154.3deg) calc(41.2% * var(--ts, 1)) 96.7%);
+  color: var(--on-deep-2);
 }
 .text {
   margin: 18px 0 0;
@@ -63,7 +63,7 @@
   max-width: 460px;
 }
 .textDark {
-  color: hsl(calc(var(--th, 0deg) + 159.3deg) calc(25.2% * var(--ts, 1)) 77.5%);
+  color: var(--odm);
 }
 .points {
   list-style: none;

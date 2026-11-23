@@ -6,7 +6,7 @@ import styles from './TeamGrid.module.css';
 
 export default function TeamGrid({ team }: { team: readonly { name: string; role: string }[] }) {
   return (
-    <section className={`section-pad ${styles.section}`}>
+    <section data-section="team" className={`section-pad ${styles.section}`}>
       <div className="inner">
         <SectionHeading eyebrow="The team" title="People behind the *current.*" align="center" />
         <div className={styles.grid}>

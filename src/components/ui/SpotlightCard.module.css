@@ -7,7 +7,7 @@
   height: 100%;
   border-radius: 26px;
   overflow: hidden;
-  border: 1px solid hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4% / 0.08);
+  border: 1px solid color-mix(in srgb, var(--ink-2) 8%, transparent);
   transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry));
   transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease), border-color 0.5s;
 }
@@ -36,19 +36,19 @@
 
 /* tones */
 .toneLight {
-  background: rgba(255, 255, 255, 0.78);
+  background: color-mix(in srgb, var(--surface) 78%, transparent);
   color: var(--ink-2);
 }
 .toneDark {
-  background: linear-gradient(160deg, hsl(calc(var(--th, 0deg) + 175.8deg) calc(92.2% * var(--ts, 1)) 15.1%) 0%, hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%) 100%);
-  color: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
+  background: linear-gradient(160deg, var(--deep-5) 0%, var(--deep-3) 100%);
+  color: var(--on-deep);
   border-color: hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1% / 0.14);
 }
 .toneDark .glow {
   background: radial-gradient(420px circle at var(--mx) var(--my), hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1% / 0.18), transparent 60%);
 }
 .toneTeal {
-  background: linear-gradient(160deg, hsl(calc(var(--th, 0deg) + 168.3deg) calc(65.3% * var(--ts, 1)) 33.9%) 0%, hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%) 100%);
+  background: linear-gradient(160deg, hsl(calc(var(--th, 0deg) + 168.3deg) calc(65.3% * var(--ts, 1)) 33.9%) 0%, var(--teal) 100%);
   color: hsl(calc(var(--th, 0deg) + 144.0deg) calc(38.5% * var(--ts, 1)) 97.5%);
   border-color: transparent;
 }

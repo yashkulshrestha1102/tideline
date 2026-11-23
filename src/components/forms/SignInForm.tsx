@@ -32,7 +32,7 @@ export default function SignInForm() {
   };
 
   return (
-    <section className={styles.wrap}>
+    <section data-section="sign-in" className={styles.wrap}>
       <motion.aside
         className={styles.art}
         initial={{ opacity: 0, x: -60 }}

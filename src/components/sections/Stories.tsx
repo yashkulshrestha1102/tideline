@@ -8,7 +8,7 @@ import styles from './Stories.module.css';
 export default function Stories() {
   const loop = [...stories.items, ...stories.items];
   return (
-    <section id="stories" className={styles.section}>
+    <section data-section="stories" id="stories" className={styles.section}>
       <div className={styles.head}>
         <SectionHeading eyebrow={stories.eyebrow} title={stories.title} align="center" />
       </div>

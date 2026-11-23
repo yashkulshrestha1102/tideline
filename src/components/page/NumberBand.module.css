@@ -2,7 +2,7 @@
   padding: 70px var(--gutter);
   position: relative;
   isolation: isolate;
-  background: #ffffff;
+  background: var(--bg);
   border-block: 1px solid var(--line);
 }
 .grid {
@@ -13,7 +13,7 @@
 }
 .item {
   padding: 10px 30px;
-  border-left: 1px solid hsl(calc(var(--th, 0deg) + 175.0deg) calc(62.1% * var(--ts, 1)) 11.4% / 0.16);
+  border-left: 1px solid color-mix(in srgb, var(--ink-2) 16%, transparent);
 }
 .num {
   font-family: var(--f-elegant);

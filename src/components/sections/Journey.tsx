@@ -27,7 +27,7 @@ export default function Journey() {
   const [t1, t2, t3, t4] = journey.titleParts;
 
   return (
-    <section id="journey" className={styles.section}>
+    <section data-section="journey" id="journey" className={styles.section}>
       <svg className={styles.bg} viewBox="0 0 1440 400" preserveAspectRatio="none" fill="none" aria-hidden="true">
         <defs>
           <linearGradient id="tlArc" x1="0" y1="0" x2="1" y2="1">

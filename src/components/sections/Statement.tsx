@@ -17,14 +17,14 @@ export default function Statement({
   const rightX = useTransform(scrollYProgress, [0, 1], ['10%', '-10%']);
 
   return (
-    <section ref={ref} className={styles.section} aria-label={eyebrow}>
+    <section data-section="statement" ref={ref} className={styles.section} aria-label={eyebrow}>
       <motion.svg className={styles.ribbonL} style={{ x: leftX }} viewBox="0 0 600 300" fill="none" aria-hidden="true">
         <path d="M0 220 C 140 80, 260 300, 420 160 S 560 40, 600 80" stroke="url(#tlStL)" strokeWidth="46" strokeLinecap="round" />
         <defs>
           <linearGradient id="tlStL" x1="0" y1="0" x2="1" y2="0">
             <stop offset="0" stopColor="hsl(calc(var(--th, 0deg) + 161.1deg) calc(39.3% * var(--ts, 1)) 71.6%)" stopOpacity="0" />
-            <stop offset=".6" stopColor="hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8%)" stopOpacity=".35" />
-            <stop offset="1" stopColor="hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8%)" stopOpacity="0" />
+            <stop offset=".6" stopColor="var(--mint)" stopOpacity=".35" />
+            <stop offset="1" stopColor="var(--mint)" stopOpacity="0" />
           </linearGradient>
         </defs>
       </motion.svg>
@@ -32,7 +32,7 @@ export default function Statement({
         <path d="M0 80 C 160 220, 300 0, 440 140 S 560 260, 600 200" stroke="url(#tlStR)" strokeWidth="30" strokeLinecap="round" />
         <defs>
           <linearGradient id="tlStR" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0" stopColor="hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8%)" stopOpacity="0" />
+            <stop offset="0" stopColor="var(--mint)" stopOpacity="0" />
             <stop offset=".4" stopColor="hsl(calc(var(--th, 0deg) + 171.7deg) calc(72.7% * var(--ts, 1)) 27.3%)" stopOpacity=".3" />
             <stop offset="1" stopColor="hsl(calc(var(--th, 0deg) + 161.1deg) calc(39.3% * var(--ts, 1)) 71.6%)" stopOpacity="0" />
           </linearGradient>

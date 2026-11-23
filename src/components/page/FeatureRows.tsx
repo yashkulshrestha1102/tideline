@@ -19,7 +19,7 @@ export type FeatureRow = {
 /** Alternating rows: copy slides in from one side, product visual from the other. */
 export default function FeatureRows({ rows }: { rows: readonly FeatureRow[] }) {
   return (
-    <section className={styles.section}>
+    <section data-section="feature-rows" className={styles.section}>
       {rows.map((r, i) => (
         <Row key={r.id} row={r} index={i} />
       ))}

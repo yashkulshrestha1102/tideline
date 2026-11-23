@@ -18,7 +18,7 @@ export default function Footer() {
   const letters = brand.name.toUpperCase().split('');
 
   return (
-    <footer className={styles.footer}>
+    <footer data-section="footer" className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.top}>
           <div className={styles.brandCol}>

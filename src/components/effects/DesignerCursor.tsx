@@ -3,8 +3,10 @@
 import { useEffect, useRef } from 'react';
 import styles from './DesignerCursor.module.css';
 
-const HOVER_SELECTOR = 'a, button, [role="tab"], label, select, summary, [data-cursor]';
-const TEXT_SELECTOR = 'input, textarea, [contenteditable="true"]';
+const HOVER_SELECTOR = 'a, button, [role="tab"], label, select, summary, input[type="range"], input[type="color"], [data-cursor]';
+// only real typing fields get the normal caret (sliders, colour pickers etc. keep the circle)
+const TEXT_SELECTOR =
+  'textarea, [contenteditable="true"], input:not([type="range"]):not([type="color"]):not([type="checkbox"]):not([type="radio"]):not([type="button"]):not([type="submit"])';
 
 /**
  * Designer cursor: a small dot that sticks to the pointer and a ring that
@@ -86,7 +88,9 @@ export default function DesignerCursor() {
       ring.classList.toggle(styles.hover, !!hit && !labelText);
       ring.classList.toggle(styles.labelled, !!labelText);
       ring.classList.toggle(styles.hidden, !!text);
-      dot.classList.toggle(styles.hidden, !!text || !!hit);
+      // small controls (e.g. inside the Theme Lab) get a tighter ring so nothing is covered
+      ring.classList.toggle(styles.compact, !!el?.closest('[data-cursor-compact]'));
+      dot.classList.toggle(styles.hidden, !!text || !!labelText);
       label.textContent = labelText;
       targetScale = labelText ? 1 : 1;
       kick();

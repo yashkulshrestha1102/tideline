@@ -19,7 +19,7 @@ export default function ToolkitScroller() {
   const bar = useTransform(smooth, [0, 1], [0, 1]);
 
   return (
-    <section ref={ref} className={styles.section} id="toolkit">
+    <section data-section="toolkit" ref={ref} className={styles.section} id="toolkit">
       <div className={styles.sticky}>
         <div className={styles.head}>
           <motion.div

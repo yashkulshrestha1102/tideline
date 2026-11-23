@@ -16,7 +16,7 @@ export default function CtaBand() {
   const artRotate = useTransform(scrollYProgress, [0, 1], [-6, 4]);
 
   return (
-    <section ref={ref} className={styles.section}>
+    <section data-section="cta" ref={ref} className={styles.section}>
       <motion.div className={styles.art} style={{ x: artX, rotate: artRotate }} aria-hidden="true">
         <Image src="/images/hero-ribbons-white.webp" alt="" fill sizes="70vw" style={{ objectFit: 'cover' }} />
       </motion.div>

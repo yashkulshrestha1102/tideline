@@ -1,9 +1,9 @@
 .section {
-  color: hsl(calc(var(--th, 0deg) + 155.0deg) calc(40.0% * var(--ts, 1)) 94.1%);
+  color: var(--on-deep);
   scroll-margin-top: var(--nav-h);
   background:
     radial-gradient(ellipse 60% 40% at 50% 0%, hsl(calc(var(--th, 0deg) + 174.2deg) calc(76.9% * var(--ts, 1)) 23.7% / 0.55), hsl(calc(var(--th, 0deg) + 174.2deg) calc(76.9% * var(--ts, 1)) 23.7% / 0) 70%),
-    linear-gradient(180deg, hsl(calc(var(--th, 0deg) + 176.1deg) calc(93.8% * var(--ts, 1)) 12.7%) 0%, hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%) 100%);
+    linear-gradient(180deg, var(--deep-2) 0%, var(--deep-3) 100%);
 }
 .wrap {
   position: relative;
@@ -26,7 +26,7 @@
   display: block;
   height: 100%;
   transform-origin: top;
-  background: linear-gradient(180deg, hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%), hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8%));
+  background: linear-gradient(180deg, hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1%), var(--mint));
   box-shadow: 0 0 14px hsl(calc(var(--th, 0deg) + 163.3deg) calc(59.0% * var(--ts, 1)) 76.1% / 0.6);
 }
 .step {
@@ -52,8 +52,8 @@
   place-items: center;
   background: radial-gradient(circle at 35% 28%, hsl(calc(var(--th, 0deg) + 173.3deg) calc(79.4% * var(--ts, 1)) 26.7%), hsl(calc(var(--th, 0deg) + 176.0deg) calc(90.9% * var(--ts, 1)) 12.9%));
   border: 1px solid hsl(calc(var(--th, 0deg) + 162.9deg) calc(58.3% * var(--ts, 1)) 76.5% / 0.4);
-  box-shadow: 0 0 0 6px hsl(calc(var(--th, 0deg) + 176.0deg) calc(95.7% * var(--ts, 1)) 9.2%), 0 0 26px hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.45);
-  color: hsl(calc(var(--th, 0deg) + 158.2deg) calc(100.0% * var(--ts, 1)) 95.7%);
+  box-shadow: 0 0 0 6px var(--deep-3), 0 0 26px hsl(calc(var(--th, 0deg) + 167.7deg) calc(58.7% * var(--ts, 1)) 40.8% / 0.45);
+  color: var(--on-deep-3);
   z-index: 2;
 }
 .left .node {
@@ -88,13 +88,13 @@
   font-family: var(--f-elegant);
   font-size: 32px;
   font-weight: 500;
-  color: hsl(calc(var(--th, 0deg) + 154.3deg) calc(41.2% * var(--ts, 1)) 96.7%);
+  color: var(--on-deep-2);
 }
 .text {
   margin: 10px 0 0;
   font-size: 15.5px;
   line-height: 1.6;
-  color: hsl(calc(var(--th, 0deg) + 159.3deg) calc(25.2% * var(--ts, 1)) 77.5%);
+  color: var(--odm);
 }
 
 @media (max-width: 820px) {

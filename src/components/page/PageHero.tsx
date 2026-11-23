@@ -30,7 +30,7 @@ export default function PageHero({ crumb, eyebrow, title, text, primary, seconda
   const copyY = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   return (
-    <section ref={ref} className={`${styles.hero} ${compact ? styles.compact : ''}`}>
+    <section data-section="page-hero" ref={ref} className={`${styles.hero} ${compact ? styles.compact : ''}`}>
       <motion.div
         className={styles.art}
         style={{ y: artY, x: artX }}

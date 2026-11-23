@@ -21,7 +21,7 @@ export default function Timeline({ id, eyebrow, title, text, steps }: {
   const fill = useSpring(scrollYProgress, { stiffness: 100, damping: 28 });
 
   return (
-    <section id={id} className={`section-pad ${styles.section}`}>
+    <section data-section="timeline" id={id} className={`section-pad ${styles.section}`}>
       <div className="inner">
         <SectionHeading eyebrow={eyebrow} title={title} text={text} dark align="center" />
 

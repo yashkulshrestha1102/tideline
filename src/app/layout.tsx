@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: 'hsl(calc(var(--th, 0deg) + 176.2deg) calc(92.9% * var(--ts, 1)) 16.7%)',
+  themeColor: 'var(--teal)',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
