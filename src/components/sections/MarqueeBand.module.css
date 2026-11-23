@@ -16,9 +16,9 @@
 }
 .band::before {
   left: 0;
-  background: linear-gradient(90deg, var(--cream), rgba(251, 246, 236, 0));
+  background: linear-gradient(90deg, var(--cream), rgba(255, 255, 255, 0));
 }
 .band::after {
   right: 0;
-  background: linear-gradient(270deg, var(--cream), rgba(251, 246, 236, 0));
+  background: linear-gradient(270deg, var(--cream), rgba(255, 255, 255, 0));
 }

@@ -3,7 +3,7 @@
   overflow: hidden;
   min-height: 100vh;
   padding: calc(var(--nav-h) + 50px) var(--gutter) 90px;
-  background: linear-gradient(180deg, #fcf7ee 0%, #eef4ef 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
 }
 .bgRibbon {
   position: absolute;
@@ -11,7 +11,7 @@
   top: 0;
   width: 70%;
   aspect-ratio: 886 / 560;
-  background: url('/images/hero-ribbons.webp') center / cover no-repeat;
+  background: url('/images/hero-ribbons-white.webp') center / cover no-repeat;
   opacity: 0.35;
   -webkit-mask-image: radial-gradient(ellipse at 60% 40%, #000 30%, transparent 70%);
   mask-image: radial-gradient(ellipse at 60% 40%, #000 30%, transparent 70%);

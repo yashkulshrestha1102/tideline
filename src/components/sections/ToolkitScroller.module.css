@@ -75,7 +75,7 @@
   transform: translateY(-8px);
 }
 .light {
-  background: #f6f1e6;
+  background: #ffffff;
   color: var(--ink-2);
 }
 .dark {

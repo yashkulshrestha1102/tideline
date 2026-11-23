@@ -40,7 +40,7 @@ export default function SignInForm() {
         transition={{ duration: 1.2, delay: 0.4, ease }}
       >
         <div className={styles.artImg} aria-hidden="true">
-          <Image src="/images/hero-ribbons.webp" alt="" fill priority sizes="50vw" style={{ objectFit: 'cover' }} />
+          <Image src="/images/hero-ribbons-white.webp" alt="" fill priority sizes="50vw" style={{ objectFit: 'cover' }} />
         </div>
         <div className={styles.artCopy}>
           <p className={styles.artQuote}>

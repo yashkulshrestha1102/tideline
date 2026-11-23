@@ -62,7 +62,7 @@ export default function Hero() {
         <motion.div className={styles.parallax} style={{ y: visY, opacity: visOpacity }}>
           <div className={styles.ribbons}>
             <Image
-              src="/images/hero-ribbons.webp"
+              src="/images/hero-ribbons-white.webp"
               alt=""
               fill
               priority

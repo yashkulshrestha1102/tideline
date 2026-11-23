@@ -17,7 +17,7 @@
   padding: 0 16px 0 6px;
   border-radius: 999px;
   border: 1px solid rgba(11, 47, 44, 0.12);
-  background: rgba(251, 246, 236, 0.82);
+  background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 16px 34px -20px rgba(3, 52, 50, 0.55);

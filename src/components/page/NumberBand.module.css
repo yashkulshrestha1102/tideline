@@ -1,6 +1,6 @@
 .band {
   padding: 70px var(--gutter);
-  background: #f2eee2 url('/images/stats-strip.webp') center / cover no-repeat;
+  background: #ffffff url('/images/stats-strip-white.webp') center / cover no-repeat;
   border-block: 1px solid var(--line);
 }
 .grid {

@@ -9,7 +9,7 @@ export default function NotFound() {
         placeItems: 'center',
         textAlign: 'center',
         padding: '140px 24px 80px',
-        background: 'linear-gradient(180deg, #fcf7ee 0%, #eef4ef 100%)',
+        background: 'linear-gradient(180deg, #ffffff 0%, #ffffff 100%)',
       }}
     >
       <div>

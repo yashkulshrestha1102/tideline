@@ -2,7 +2,7 @@
   position: relative;
   z-index: 3;
   border-top: 1px solid var(--line);
-  background: var(--sand) url('/images/stats-strip.webp') center / cover no-repeat;
+  background: var(--sand) url('/images/stats-strip-white.webp') center / cover no-repeat;
 }
 .row {
   max-width: 1100px;

@@ -40,7 +40,7 @@ export default function PageHero({ crumb, eyebrow, title, text, primary, seconda
         aria-hidden="true"
       >
         <div className={`${styles.float} ${flip ? styles.flip : ''}`}>
-          <Image src="/images/hero-ribbons.webp" alt="" fill priority sizes="60vw" style={{ objectFit: 'cover' }} />
+          <Image src="/images/hero-ribbons-white.webp" alt="" fill priority sizes="60vw" style={{ objectFit: 'cover' }} />
         </div>
       </motion.div>
 

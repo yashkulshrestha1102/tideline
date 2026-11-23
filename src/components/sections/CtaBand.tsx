@@ -18,7 +18,7 @@ export default function CtaBand() {
   return (
     <section ref={ref} className={styles.section}>
       <motion.div className={styles.art} style={{ x: artX, rotate: artRotate }} aria-hidden="true">
-        <Image src="/images/hero-ribbons.webp" alt="" fill sizes="70vw" style={{ objectFit: 'cover' }} />
+        <Image src="/images/hero-ribbons-white.webp" alt="" fill sizes="70vw" style={{ objectFit: 'cover' }} />
       </motion.div>
       <div className={styles.veil} aria-hidden="true" />
 

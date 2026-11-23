@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   padding: calc(var(--nav-h) + 30px) var(--gutter) 60px;
   gap: 30px;
-  background: linear-gradient(180deg, #fcf7ee 0%, var(--cream-2) 100%);
+  background: linear-gradient(180deg, #ffffff 0%, var(--cream-2) 100%);
 }
 .art {
   position: relative;
