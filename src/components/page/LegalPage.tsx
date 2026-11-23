@@ -16,7 +16,7 @@ export default function LegalPage({ crumb, title, updated, intro, sections }: {
   return (
     <main>
       <PageHero crumb={crumb} eyebrow={`Last updated · ${updated}`} title={title} text={intro} compact />
-      <section className={`section-pad ${styles.section}`}>
+      <section data-section="legal" className={`section-pad ${styles.section}`}>
         <div className={styles.layout}>
           <nav className={styles.toc} aria-label="On this page">
             <div className={styles.tocTitle}>On this page</div>

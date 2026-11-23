@@ -1,9 +1,9 @@
 .section {
-  color: #eaf6f1;
+  color: var(--on-deep);
   scroll-margin-top: var(--nav-h);
   background:
     radial-gradient(ellipse 60% 40% at 50% 0%, rgba(14, 107, 98, 0.55), rgba(14, 107, 98, 0) 70%),
-    linear-gradient(180deg, #023f3b 0%, #012e2b 100%);
+    linear-gradient(180deg, var(--deep-2) 0%, var(--deep-3) 100%);
 }
 .wrap {
   position: relative;
@@ -26,7 +26,7 @@
   display: block;
   height: 100%;
   transform-origin: top;
-  background: linear-gradient(180deg, #9ee6d2, #2ba58c);
+  background: linear-gradient(180deg, #9ee6d2, var(--mint));
   box-shadow: 0 0 14px rgba(158, 230, 210, 0.6);
 }
 .step {
@@ -52,8 +52,8 @@
   place-items: center;
   background: radial-gradient(circle at 35% 28%, #0e7a6e, #033f3b);
   border: 1px solid rgba(160, 230, 210, 0.4);
-  box-shadow: 0 0 0 6px #012e2b, 0 0 26px rgba(43, 165, 140, 0.45);
-  color: #e9fff7;
+  box-shadow: 0 0 0 6px var(--deep-3), 0 0 26px rgba(43, 165, 140, 0.45);
+  color: var(--on-deep-3);
   z-index: 2;
 }
 .left .node {
@@ -88,13 +88,13 @@
   font-family: var(--f-elegant);
   font-size: 32px;
   font-weight: 500;
-  color: #f3faf7;
+  color: var(--on-deep-2);
 }
 .text {
   margin: 10px 0 0;
   font-size: 15.5px;
   line-height: 1.6;
-  color: #b7d4ca;
+  color: var(--odm);
 }
 
 @media (max-width: 820px) {

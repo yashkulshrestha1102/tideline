@@ -9,7 +9,7 @@ import { ArrowRight } from '@/components/ui/Icons';
 import styles from './AiMatching.module.css';
 
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
-const barColors = ['#03524D', '#13786A', '#1E8F79', '#2BA58C', '#9AD3C1'];
+const barColors = ['var(--teal)', '#13786a', '#1e8f79', 'var(--mint)', '#9ad3c1'];
 const R = 56;
 const CIRC = 2 * Math.PI * R;
 
@@ -21,7 +21,7 @@ export default function AiMatching() {
   const s = aiMatching.sample;
 
   return (
-    <section id="ai-matching" ref={ref} className={styles.section}>
+    <section data-section="ai-matching" id="ai-matching" ref={ref} className={styles.section}>
       {/* giant ghost word sliding sideways on scroll */}
       <motion.div className={styles.ghost} style={{ x: ghostX, y: '-50%' }} aria-hidden="true">
         precision matching · precision matching
@@ -102,7 +102,7 @@ export default function AiMatching() {
               <div className={styles.scoreRow}>
                 <div className={styles.ring}>
                   <svg width="132" height="132" viewBox="0 0 132 132" aria-hidden="true">
-                    <circle cx="66" cy="66" r={R} fill="none" stroke="#E4E6DE" strokeWidth="10" />
+                    <circle cx="66" cy="66" r={R} fill="none" stroke="#333A39" strokeWidth="10" />
                     <g transform="rotate(-90 66 66)">
                       <motion.circle
                         cx="66"
@@ -121,8 +121,8 @@ export default function AiMatching() {
                     </g>
                     <defs>
                       <linearGradient id="tlRing" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0" stopColor="#2BA58C" />
-                        <stop offset="1" stopColor="#03524D" />
+                        <stop offset="0" stopColor="#66BEAC" />
+                        <stop offset="1" stopColor="#2BA58C" />
                       </linearGradient>
                     </defs>
                   </svg>

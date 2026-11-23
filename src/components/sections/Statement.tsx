@@ -17,14 +17,14 @@ export default function Statement({
   const rightX = useTransform(scrollYProgress, [0, 1], ['10%', '-10%']);
 
   return (
-    <section ref={ref} className={styles.section} aria-label={eyebrow}>
+    <section data-section="statement" ref={ref} className={styles.section} aria-label={eyebrow}>
       <motion.svg className={styles.ribbonL} style={{ x: leftX }} viewBox="0 0 600 300" fill="none" aria-hidden="true">
         <path d="M0 220 C 140 80, 260 300, 420 160 S 560 40, 600 80" stroke="url(#tlStL)" strokeWidth="46" strokeLinecap="round" />
         <defs>
           <linearGradient id="tlStL" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0" stopColor="#9AD3C1" stopOpacity="0" />
-            <stop offset=".6" stopColor="#2BA58C" stopOpacity=".35" />
-            <stop offset="1" stopColor="#2BA58C" stopOpacity="0" />
+            <stop offset="0" stopColor="#9ad3c1" stopOpacity="0" />
+            <stop offset=".6" stopColor="#66BEAC" stopOpacity=".35" />
+            <stop offset="1" stopColor="#66BEAC" stopOpacity="0" />
           </linearGradient>
         </defs>
       </motion.svg>
@@ -32,9 +32,9 @@ export default function Statement({
         <path d="M0 80 C 160 220, 300 0, 440 140 S 560 260, 600 200" stroke="url(#tlStR)" strokeWidth="30" strokeLinecap="round" />
         <defs>
           <linearGradient id="tlStR" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0" stopColor="#2BA58C" stopOpacity="0" />
-            <stop offset=".4" stopColor="#13786A" stopOpacity=".3" />
-            <stop offset="1" stopColor="#9AD3C1" stopOpacity="0" />
+            <stop offset="0" stopColor="#66BEAC" stopOpacity="0" />
+            <stop offset=".4" stopColor="#13786a" stopOpacity=".3" />
+            <stop offset="1" stopColor="#9ad3c1" stopOpacity="0" />
           </linearGradient>
         </defs>
       </motion.svg>

@@ -16,7 +16,7 @@ export default function FeatureGrid({ id, eyebrow, title, text, items, dark = fa
   dark?: boolean;
 }) {
   return (
-    <section id={id} className={`section-pad ${styles.section} ${dark ? styles.dark : ''}`}>
+    <section data-section="feature-grid" id={id} className={`section-pad ${styles.section} ${dark ? styles.dark : ''}`}>
       <div className="inner">
         <SectionHeading eyebrow={eyebrow} title={title} text={text} dark={dark} align="center" />
         <div className={styles.grid}>

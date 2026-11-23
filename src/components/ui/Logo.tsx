@@ -9,8 +9,8 @@ export function LogoMark({ size = 40, light = false, id = 'rd' }: MarkProps) {
     <svg width={size} height={size} viewBox="0 0 40 40" fill="none" aria-hidden="true">
       <defs>
         <linearGradient id={`${id}-bg`} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#14897A" />
-          <stop offset="1" stopColor="#03524D" />
+          <stop offset="0" stopColor="#14897a" />
+          <stop offset="1" stopColor="#2BA58C" />
         </linearGradient>
       </defs>
       <rect width="40" height="40" rx="12" fill={`url(#${id}-bg)`} />
@@ -20,7 +20,7 @@ export function LogoMark({ size = 40, light = false, id = 'rd' }: MarkProps) {
         width="38.5"
         height="38.5"
         rx="11.25"
-        stroke={light ? 'rgba(158,230,210,0.45)' : 'rgba(255,255,255,0.18)'}
+        stroke={light ? 'rgba(158, 230, 210, 0.45)' : 'rgba(255,255,255,0.18)'}
         strokeWidth="1.5"
       />
       {/* the desk */}
@@ -42,11 +42,11 @@ export default function Logo({ light = false, size = 40, id }: MarkProps) {
           fontSize: size * 0.78,
           lineHeight: 1,
           letterSpacing: '-0.01em',
-          color: light ? '#EAF6F1' : '#082E2B',
+          color: light ? 'var(--on-deep)' : 'var(--ink)',
         }}
       >
         Raise
-        <em style={{ fontStyle: 'italic', color: light ? '#9EE6D2' : '#13786A' }}>desk</em>
+        <em style={{ fontStyle: 'italic', color: light ? '#9ee6d2' : '#13786a' }}>desk</em>
       </span>
     </span>
   );

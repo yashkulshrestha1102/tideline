@@ -27,24 +27,24 @@ export default function Journey() {
   const [t1, t2, t3, t4] = journey.titleParts;
 
   return (
-    <section id="journey" className={styles.section}>
+    <section data-section="journey" id="journey" className={styles.section}>
       <svg className={styles.bg} viewBox="0 0 1440 400" preserveAspectRatio="none" fill="none" aria-hidden="true">
         <defs>
           <linearGradient id="tlArc" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="#5FD3B6" stopOpacity="0" />
-            <stop offset=".5" stopColor="#5FD3B6" stopOpacity=".35" />
-            <stop offset="1" stopColor="#5FD3B6" stopOpacity="0" />
+            <stop offset="0" stopColor="#5fd3b6" stopOpacity="0" />
+            <stop offset=".5" stopColor="#5fd3b6" stopOpacity=".35" />
+            <stop offset="1" stopColor="#5fd3b6" stopOpacity="0" />
           </linearGradient>
           <radialGradient id="tlPlanet" cx=".85" cy="1.05" r=".6">
-            <stop offset="0" stopColor="#2AA391" stopOpacity=".45" />
-            <stop offset="1" stopColor="#2AA391" stopOpacity="0" />
+            <stop offset="0" stopColor="#2aa391" stopOpacity=".45" />
+            <stop offset="1" stopColor="#2aa391" stopOpacity="0" />
           </radialGradient>
         </defs>
         <rect width="1440" height="400" fill="url(#tlPlanet)" />
         <path d="M-60 40 C 80 120, 140 260, 120 420" stroke="url(#tlArc)" strokeWidth="1.2" />
         <path d="M-90 80 C 60 160, 110 290, 80 420" stroke="url(#tlArc)" strokeWidth="1" />
         <path d="M1500 120 C 1340 170, 1260 290, 1250 420" stroke="url(#tlArc)" strokeWidth="1.4" />
-        <path d="M1520 170 C 1380 220, 1310 320, 1300 420" stroke="#9EF0D8" strokeOpacity=".28" strokeWidth="1" />
+        <path d="M1520 170 C 1380 220, 1310 320, 1300 420" stroke="#9ef0d8" strokeOpacity=".28" strokeWidth="1" />
       </svg>
       <div className={styles.topLine} />
 

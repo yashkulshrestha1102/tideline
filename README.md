@@ -2,6 +2,8 @@
 
 A product of **Businezexcellence StartX LLP**.
 
+**Theme:** final dark theme (colours in `src/app/globals.css` → `:root`). Water ripple and designer cursor are always on.
+
 **Full website:** 12 pages, navigation, page transitions and scroll animations.
 
 | Route | Page |

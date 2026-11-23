@@ -15,7 +15,7 @@ export default function AudienceSplit() {
   ];
 
   return (
-    <section className={`section-pad ${styles.section}`}>
+    <section data-section="founders-investors" className={`section-pad ${styles.section}`}>
       <div className="inner">
         <SectionHeading eyebrow={audience.eyebrow} title={audience.title} align="center" />
 

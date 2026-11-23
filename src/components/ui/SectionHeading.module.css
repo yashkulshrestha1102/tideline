@@ -24,7 +24,7 @@
   line-height: 0.95;
 }
 .dark {
-  color: #f3faf7;
+  color: var(--on-deep-2);
 }
 .text {
   margin: 24px 0 0;
@@ -38,5 +38,5 @@
   margin-right: auto;
 }
 .textDark {
-  color: #b7d4ca;
+  color: var(--odm);
 }

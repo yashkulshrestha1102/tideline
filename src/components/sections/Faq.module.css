@@ -1,5 +1,5 @@
 .section {
-  background: linear-gradient(180deg, var(--cream) 0%, #ffffff 100%);
+  background: linear-gradient(180deg, var(--cream) 0%, var(--bg) 100%);
 }
 .grid {
   display: flex;
@@ -24,7 +24,7 @@
   min-width: 0;
 }
 .item {
-  border-bottom: 1px solid rgba(11, 47, 44, 0.14);
+  border-bottom: 1px solid color-mix(in srgb, var(--ink-2) 14%, transparent);
 }
 .q {
   width: 100%;
@@ -50,9 +50,9 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: #fff;
+  background: var(--surface);
   color: var(--teal);
-  border: 1px solid rgba(11, 47, 44, 0.14);
+  border: 1px solid color-mix(in srgb, var(--ink-2) 14%, transparent);
   transition: transform 0.45s var(--ease), background 0.35s, color 0.35s;
 }
 .plusOpen {

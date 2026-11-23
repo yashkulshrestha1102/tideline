@@ -1,5 +1,5 @@
 .section {
-  background: linear-gradient(180deg, var(--cream) 0%, #ffffff 100%);
+  background: linear-gradient(180deg, var(--cream) 0%, var(--bg) 100%);
 }
 .grid {
   display: flex;
@@ -19,7 +19,7 @@
   gap: 16px;
   padding: 22px;
   border-radius: 22px;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line);
   transition: transform 0.5s var(--ease), border-color 0.4s;
 }
@@ -30,7 +30,7 @@
 .channel small {
   display: block;
   font-size: 12.5px;
-  color: #5a7670;
+  color: var(--subtle);
 }
 .channel b {
   font-size: 16px;
@@ -43,7 +43,7 @@
   border-radius: 15px;
   display: grid;
   place-items: center;
-  background: #dcefe6;
+  background: var(--tint);
   color: var(--teal);
   flex: none;
 }
@@ -52,7 +52,7 @@
   min-width: 0;
   padding: clamp(26px, 3vw, 44px);
   border-radius: 30px;
-  background: rgba(255, 255, 255, 0.8);
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.95);

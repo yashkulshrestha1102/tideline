@@ -8,7 +8,7 @@ export type NumberItem = { value: number; prefix?: string; suffix?: string; labe
 
 export default function NumberBand({ items }: { items: readonly NumberItem[] }) {
   return (
-    <section className={styles.band}>
+    <section data-section="numbers" className={styles.band}>
       <div className={styles.grid}>
         {items.map((it, i) => (
           <motion.div

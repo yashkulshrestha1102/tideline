@@ -3,7 +3,7 @@
   overflow: hidden;
   min-height: 100vh;
   padding: calc(var(--nav-h) + 50px) var(--gutter) 90px;
-  background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg) 100%);
 }
 .bgRibbon {
   position: absolute;
@@ -11,7 +11,7 @@
   top: 0;
   width: 70%;
   aspect-ratio: 886 / 560;
-  background: url('/images/hero-ribbons-white.webp') center / cover no-repeat;
+  background: url('/images/hero-ribbons-dark.webp') center / cover no-repeat;
   opacity: 0.35;
   -webkit-mask-image: radial-gradient(ellipse at 60% 40%, #000 30%, transparent 70%);
   mask-image: radial-gradient(ellipse at 60% 40%, #000 30%, transparent 70%);
@@ -45,7 +45,7 @@
   margin-top: 44px;
   padding: clamp(24px, 3.4vw, 48px);
   border-radius: 32px;
-  background: rgba(255, 255, 255, 0.82);
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.95);
@@ -63,7 +63,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #8aa09a;
+  color: var(--subtle-4);
   font-size: 14px;
   font-weight: 600;
   transition: color 0.4s;
@@ -91,7 +91,7 @@
   margin-top: 18px;
   height: 4px;
   border-radius: 4px;
-  background: #e4e6de;
+  background: var(--tint-5);
   overflow: hidden;
 }
 .bar i {
@@ -99,7 +99,7 @@
   height: 100%;
   transform-origin: left;
   transform: scaleX(0.25);
-  background: linear-gradient(90deg, #2ba58c, #03524d);
+  background: linear-gradient(90deg, var(--mint), var(--teal));
 }
 .body {
   margin-top: 34px;
@@ -125,8 +125,8 @@
   gap: 6px;
   padding: 26px;
   border-radius: 22px;
-  border: 1px solid rgba(11, 47, 44, 0.14);
-  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--ink-2) 14%, transparent);
+  background: var(--surface);
   text-align: left;
   cursor: pointer;
   font-family: var(--f-sans);
@@ -143,7 +143,7 @@
 }
 .role small {
   font-size: 14px;
-  color: #5a7670;
+  color: var(--subtle);
 }
 .roleOn {
   border-color: var(--teal);
@@ -155,13 +155,13 @@
   border-radius: 16px;
   display: grid;
   place-items: center;
-  background: #dcefe6;
+  background: var(--tint);
   color: var(--teal);
 }
 .legal {
   margin-top: 22px;
   font-size: 13.5px;
-  color: #5a7670;
+  color: var(--subtle);
 }
 .legal a {
   color: var(--teal);
@@ -211,7 +211,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  color: #eaf6f1;
+  color: var(--on-deep);
   background: radial-gradient(circle at 35% 28%, #0e7a6e, #033f3b);
   box-shadow: 0 0 40px rgba(43, 165, 140, 0.5);
 }

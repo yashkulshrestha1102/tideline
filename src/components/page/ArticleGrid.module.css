@@ -7,7 +7,7 @@
   gap: 8px;
   padding: 6px;
   border-radius: 999px;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line);
   width: fit-content;
 }
@@ -46,7 +46,7 @@
 .card {
   border-radius: 24px;
   overflow: hidden;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line);
   cursor: pointer;
   transition: box-shadow 0.5s var(--ease), border-color 0.4s;
@@ -61,7 +61,7 @@
 .cover {
   position: relative;
   height: 190px;
-  background: linear-gradient(150deg, #0e6b62, #012e2b);
+  background: linear-gradient(150deg, #0e6b62, var(--deep-3));
   overflow: hidden;
 }
 .cover svg {
@@ -83,7 +83,7 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #012e2b;
+  color: var(--deep-3);
   background: #9ee6d2;
   padding: 6px 12px;
   border-radius: 999px;
@@ -107,7 +107,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 13.5px;
-  color: #5a7670;
+  color: var(--subtle);
 }
 .meta span {
   display: inline-flex;

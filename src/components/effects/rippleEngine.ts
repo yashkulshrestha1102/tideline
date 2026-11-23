@@ -4,6 +4,8 @@
 // click-through canvas. Sleeps when nothing is moving.
 // ------------------------------------------------------------
 
+import { THEME_EVENT, themed } from '@/lib/theme';
+
 type Ripple = {
   x: number;
   y: number;
@@ -21,6 +23,15 @@ export function createRippleEngine(canvas: HTMLCanvasElement): RippleEngine {
   if (!ctx) return { destroy: () => {} };
 
   const ripples: Ripple[] = [];
+
+  // brand colours, recoloured by the Theme Lab
+  const C = { foam: '158, 230, 210', mint: '43, 165, 140', deep: '19, 120, 106' };
+  const refreshColors = () => {
+    C.foam = themed(158, 230, 210).join(', ');
+    C.mint = themed(43, 165, 140).join(', ');
+    C.deep = themed(19, 120, 106).join(', ');
+  };
+  refreshColors();
   const MAX = 40;
   const SPACING = 44; // px the cursor must travel before a new ripple
   const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
@@ -101,9 +112,9 @@ export function createRippleEngine(canvas: HTMLCanvasElement): RippleEngine {
     if (glow.a > 0.01) {
       const R = 130;
       const g = ctx.createRadialGradient(glow.x, glow.y, 0, glow.x, glow.y, R);
-      g.addColorStop(0, `rgba(158, 230, 210, ${0.16 * glow.a})`);
-      g.addColorStop(0.5, `rgba(43, 165, 140, ${0.05 * glow.a})`);
-      g.addColorStop(1, 'rgba(43, 165, 140, 0)');
+      g.addColorStop(0, `rgba(${C.foam}, ${0.16 * glow.a})`);
+      g.addColorStop(0.5, `rgba(${C.mint}, ${0.05 * glow.a})`);
+      g.addColorStop(1, `rgba(${C.mint}, 0)`);
       ctx.fillStyle = g;
       ctx.fillRect(glow.x - R, glow.y - R, R * 2, R * 2);
     }
@@ -124,8 +135,8 @@ export function createRippleEngine(canvas: HTMLCanvasElement): RippleEngine {
       // soft water band: teal trough inside, light crest outside
       const inner = Math.max(radius - band, 0);
       const grad = ctx.createRadialGradient(r.x, r.y, inner, r.x, r.y, radius + 2);
-      grad.addColorStop(0, 'rgba(19, 120, 106, 0)');
-      grad.addColorStop(0.45, `rgba(19, 120, 106, ${0.16 * fade})`);
+      grad.addColorStop(0, `rgba(${C.deep}, 0)`);
+      grad.addColorStop(0.45, `rgba(${C.deep}, ${0.16 * fade})`);
       grad.addColorStop(0.8, `rgba(255, 255, 255, ${0.2 * fade})`);
       grad.addColorStop(1, 'rgba(255, 255, 255, 0)');
       ctx.fillStyle = grad;
@@ -144,7 +155,7 @@ export function createRippleEngine(canvas: HTMLCanvasElement): RippleEngine {
       // thin teal line just inside, so rings also read on light backgrounds
       ctx.beginPath();
       ctx.arc(r.x, r.y, Math.max(radius - 3, 0), 0, Math.PI * 2);
-      ctx.strokeStyle = `rgba(19, 120, 106, ${(r.splash ? 0.45 : 0.4) * fade})`;
+      ctx.strokeStyle = `rgba(${C.deep}, ${(r.splash ? 0.45 : 0.4) * fade})`;
       ctx.lineWidth = 0.6 + 1.1 * (1 - t);
       ctx.stroke();
     }
@@ -177,6 +188,7 @@ export function createRippleEngine(canvas: HTMLCanvasElement): RippleEngine {
   window.addEventListener('pointermove', onMove, { passive: true });
   window.addEventListener('pointerdown', onDown, { passive: true });
   document.addEventListener('visibilitychange', onVisibility);
+  window.addEventListener(THEME_EVENT, refreshColors);
 
   return {
     destroy: () => {
@@ -185,6 +197,7 @@ export function createRippleEngine(canvas: HTMLCanvasElement): RippleEngine {
       window.removeEventListener('pointermove', onMove);
       window.removeEventListener('pointerdown', onDown);
       document.removeEventListener('visibilitychange', onVisibility);
+      window.removeEventListener(THEME_EVENT, refreshColors);
     },
   };
 }

@@ -2,22 +2,50 @@
    Raisedesk — design tokens & global styles
    ============================================================ */
 :root {
-  /* Colors */
-  --cream: #ffffff;
-  --cream-2: #ffffff;
-  --sand: #ffffff;
-  --ink: #082e2b;
-  --ink-2: #0b2f2c;
-  --muted: #3e4f4c;
-  --teal: #03524d;
-  --teal-dark: #02403c;
-  --teal-icon: #14625a;
-  --mint: #2ba58c;
-  --deep: #013432;
-  --deep-2: #023f3b;
-  --foam: #eaf6f1;
-  --coral: #f4715d;
-  --line: rgba(11, 47, 44, 0.09);
+  /* Colors — final dark theme (Raisedesk) */
+  --bg: #0B0F0E;
+  --surface: #141B1A;
+  --ink: #F2F6F5;
+  --ink-2: #F2F6F5;
+  --ink-3: #F2F6F5;
+  --muted: #B7C4C0;
+  --subtle: #98A3A0;
+  --subtle-2: #A6B2AE;
+  --subtle-3: #7D8683;
+  --subtle-4: #6B7472;
+  --teal: #2BA58C;
+  --teal-dark: #228470;
+  --teal-icon: #2BA58C;
+  --mint: #66BEAC;
+  --deep: #050807;
+  --deep-2: #1E2120;
+  --deep-3: #050807;
+  --deep-4: #040605;
+  --deep-5: #2D302F;
+  --deep-6: #050807;
+  --on-deep: #EAF6F1;
+  --on-deep-2: #EAF6F1;
+  --on-deep-3: #EAF6F1;
+  --odm: #B3BDB9;
+  --odm-2: #A5AFAB;
+  --odm-3: #CFD9D5;
+  --odm-4: #9CA5A1;
+  --odm-5: #CAD5D0;
+  --odm-6: #D3DEDA;
+  --odm-7: #787F7C;
+  --tint: #18312C;
+  --tint-2: #162623;
+  --tint-3: #162925;
+  --tint-4: #1D2423;
+  --tint-5: #333A39;
+  --tint-6: #2F3534;
+  --accent: #F4715D;
+  --cream: var(--bg);
+  --cream-2: var(--bg);
+  --sand: var(--bg);
+  --foam: var(--on-deep);
+  --coral: var(--accent);
+  --line: color-mix(in srgb, var(--ink-2) 9%, transparent);
 
   /* Type (loaded in layout.tsx from Google Fonts) */
   --f-display: 'DM Serif Display', Georgia, serif;
@@ -41,6 +69,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  color-scheme: dark;
 }
 
 body {
@@ -181,7 +210,7 @@ html.lenis body {
   display: grid;
   place-items: center;
   pointer-events: none;
-  background: linear-gradient(160deg, #03524d 0%, #013432 100%);
+  background: linear-gradient(160deg, var(--teal) 0%, var(--deep) 100%);
   transform-origin: top;
   animation: tl-curtain 1s cubic-bezier(0.76, 0, 0.24, 1) 0.15s both;
 }
@@ -219,7 +248,7 @@ html.lenis body {
   font-weight: 600;
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: #0b3b37;
+  color: var(--ink-3);
 }
 .eyebrow::before {
   content: '';
@@ -261,7 +290,7 @@ html.tl-cursor-on,
 html.tl-cursor-on * {
   cursor: none !important;
 }
-html.tl-cursor-on input,
+html.tl-cursor-on input:not([type='range']):not([type='color']):not([type='checkbox']):not([type='radio']):not([type='button']):not([type='submit']),
 html.tl-cursor-on textarea,
 html.tl-cursor-on [contenteditable='true'] {
   cursor: text !important;

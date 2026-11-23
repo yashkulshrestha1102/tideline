@@ -1,5 +1,5 @@
 .section {
-  background: linear-gradient(180deg, var(--cream) 0%, #ffffff 100%);
+  background: linear-gradient(180deg, var(--cream) 0%, var(--bg) 100%);
 }
 .toggles {
   display: flex;
@@ -11,7 +11,7 @@
   display: flex;
   padding: 6px;
   border-radius: 999px;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line);
 }
 .opt {
@@ -53,7 +53,7 @@
   flex-direction: column;
   padding: 36px 32px;
   border-radius: 28px;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line);
   transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
 }
@@ -62,8 +62,8 @@
   box-shadow: 0 40px 70px -45px rgba(3, 52, 50, 0.55);
 }
 .popular {
-  background: linear-gradient(160deg, #03524d 0%, #012e2b 100%);
-  color: #eaf6f1;
+  background: linear-gradient(160deg, var(--teal) 0%, var(--deep-3) 100%);
+  color: var(--on-deep);
   border-color: transparent;
   box-shadow: 0 50px 90px -50px rgba(3, 82, 77, 0.8);
 }
@@ -78,7 +78,7 @@
   padding: 6px 12px;
   border-radius: 999px;
   background: #9ee6d2;
-  color: #012e2b;
+  color: var(--deep-3);
 }
 .name {
   margin: 0;
@@ -139,7 +139,7 @@
 }
 .btnLight {
   background: #9ee6d2;
-  color: #012e2b;
+  color: var(--deep-3);
   font-weight: 600;
 }
 .btnLight:hover {

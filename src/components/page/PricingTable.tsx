@@ -25,7 +25,7 @@ export default function PricingTable({ founders, investors }: {
   const plans = who === 'founders' ? founders : investors;
 
   return (
-    <section className={`section-pad ${styles.section}`}>
+    <section data-section="pricing" className={`section-pad ${styles.section}`}>
       <div className="inner">
         <div className={styles.toggles}>
           <Toggle

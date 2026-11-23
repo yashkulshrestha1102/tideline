@@ -24,10 +24,10 @@ const pearls = [
 ];
 
 const fitBars = [
-  { w: 72, c: '#9AD3C1' },
-  { w: 80, c: '#2BA58C' },
-  { w: 66, c: '#1E8F79' },
-  { w: 52, c: '#13786A' },
+  { w: 72, c: '#9ad3c1' },
+  { w: 80, c: 'var(--mint)' },
+  { w: 66, c: '#1e8f79' },
+  { w: 52, c: '#13786a' },
 ];
 
 export default function Hero() {
@@ -50,7 +50,7 @@ export default function Hero() {
   });
 
   return (
-    <div ref={ref} className={styles.wrap} id="top">
+    <div data-section="hero" ref={ref} className={styles.wrap} id="top">
       {/* ---------- Artwork ---------- */}
       <motion.div
         className={styles.visual}
@@ -62,7 +62,7 @@ export default function Hero() {
         <motion.div className={styles.parallax} style={{ y: visY, opacity: visOpacity }}>
           <div className={styles.ribbons}>
             <Image
-              src="/images/hero-ribbons-white.webp"
+              src="/images/hero-ribbons-dark.webp"
               alt=""
               fill
               priority

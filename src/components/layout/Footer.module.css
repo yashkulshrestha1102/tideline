@@ -1,10 +1,10 @@
 .footer {
   position: relative;
   overflow: hidden;
-  color: #a9c9be;
+  color: var(--odm-2);
   background:
     radial-gradient(ellipse 50% 60% at 15% 0%, rgba(14, 107, 98, 0.45), rgba(14, 107, 98, 0) 70%),
-    linear-gradient(180deg, #012e2b 0%, #011f1d 100%);
+    linear-gradient(180deg, var(--deep-3) 0%, var(--deep-4) 100%);
   padding: 90px var(--gutter) 32px;
 }
 .inner {
@@ -25,7 +25,7 @@
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  color: #eaf6f1;
+  color: var(--on-deep);
 }
 .wordmark {
   font-family: var(--f-elegant);
@@ -45,7 +45,7 @@
   display: block;
   font-size: 13px;
   letter-spacing: 0.08em;
-  color: #eaf6f1;
+  color: var(--on-deep);
   margin-bottom: 12px;
 }
 .newsRow {
@@ -64,11 +64,11 @@
   background: transparent;
   border: 0;
   outline: 0;
-  color: #eaf6f1;
+  color: var(--on-deep);
   font: 400 16px var(--f-sans);
 }
 .newsRow input::placeholder {
-  color: #6f9489;
+  color: var(--odm-7);
 }
 .newsRow button {
   width: 44px;
@@ -76,7 +76,7 @@
   border-radius: 50%;
   border: 0;
   background: #9ee6d2;
-  color: #012e2b;
+  color: var(--deep-3);
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -108,12 +108,12 @@
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #eaf6f1;
+  color: var(--on-deep);
 }
 .link {
   position: relative;
   font-size: 15px;
-  color: #a9c9be;
+  color: var(--odm-2);
   transition: color 0.3s;
 }
 .link::after {
@@ -129,7 +129,7 @@
   transition: transform 0.4s var(--ease);
 }
 .link:hover {
-  color: #eaf6f1;
+  color: var(--on-deep);
 }
 .link:hover::after {
   transform: scaleX(1);
@@ -184,12 +184,12 @@
   display: grid;
   place-items: center;
   border: 1px solid rgba(169, 201, 190, 0.3);
-  color: #cfe7de;
+  color: var(--odm-5);
   transition: background 0.3s, color 0.3s, transform 0.4s var(--ease);
 }
 .social a:hover {
   background: #9ee6d2;
-  color: #012e2b;
+  color: var(--deep-3);
   transform: translateY(-3px);
 }
 .toTop {
@@ -199,7 +199,7 @@
   min-height: 44px;
   background: none;
   border: 0;
-  color: #eaf6f1;
+  color: var(--on-deep);
   cursor: pointer;
   font-size: 14px;
 }

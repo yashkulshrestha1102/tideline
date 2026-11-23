@@ -68,8 +68,8 @@ export default function MatchWizard() {
   };
 
   return (
-    <section className={styles.wrap}>
-      <div className={styles.bgRibbon} aria-hidden="true" />
+    <section data-section="get-matched" className={styles.wrap}>
+      <div className={styles.bgRibbon} data-art="ribbon-bg" aria-hidden="true" />
       <div className={styles.shell}>
         <motion.div
           className={styles.head}

@@ -6,7 +6,7 @@ import styles from './TeamGrid.module.css';
 
 export default function TeamGrid({ team }: { team: readonly { name: string; role: string }[] }) {
   return (
-    <section className={`section-pad ${styles.section}`}>
+    <section data-section="team" className={`section-pad ${styles.section}`}>
       <div className="inner">
         <SectionHeading eyebrow="The team" title="People behind the *current.*" align="center" />
         <div className={styles.grid}>
@@ -22,7 +22,7 @@ export default function TeamGrid({ team }: { team: readonly { name: string; role
               <div className={styles.photo} aria-hidden="true">
                 <span>{m.name.replace(/[^A-Za-z]/g, '').slice(0, 1) || 'T'}</span>
                 <svg viewBox="0 0 200 200" preserveAspectRatio="none">
-                  <path d={`M0 ${150 - i * 10} C 60 ${90 + i * 8}, 120 ${190 - i * 6}, 200 ${110 + i * 5}`} stroke="rgba(158,230,210,.5)" strokeWidth="18" fill="none" strokeLinecap="round" />
+                  <path d={`M0 ${150 - i * 10} C 60 ${90 + i * 8}, 120 ${190 - i * 6}, 200 ${110 + i * 5}`} stroke="rgba(158, 230, 210, .5)" strokeWidth="18" fill="none" strokeLinecap="round" />
                 </svg>
               </div>
               <div className={styles.name}>{m.name}</div>

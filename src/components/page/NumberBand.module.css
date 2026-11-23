@@ -1,6 +1,8 @@
 .band {
   padding: 70px var(--gutter);
-  background: #ffffff url('/images/stats-strip-white.webp') center / cover no-repeat;
+  position: relative;
+  isolation: isolate;
+  background: var(--bg);
   border-block: 1px solid var(--line);
 }
 .grid {
@@ -11,7 +13,7 @@
 }
 .item {
   padding: 10px 30px;
-  border-left: 1px solid rgba(11, 47, 44, 0.16);
+  border-left: 1px solid color-mix(in srgb, var(--ink-2) 16%, transparent);
 }
 .num {
   font-family: var(--f-elegant);
@@ -27,4 +29,12 @@
   margin-top: 10px;
   font-size: 15px;
   color: var(--muted);
+}
+
+.band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('/images/stats-strip-dark.webp') center / cover no-repeat;
 }

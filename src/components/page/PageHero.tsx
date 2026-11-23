@@ -30,7 +30,7 @@ export default function PageHero({ crumb, eyebrow, title, text, primary, seconda
   const copyY = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   return (
-    <section ref={ref} className={`${styles.hero} ${compact ? styles.compact : ''}`}>
+    <section data-section="page-hero" ref={ref} className={`${styles.hero} ${compact ? styles.compact : ''}`}>
       <motion.div
         className={styles.art}
         style={{ y: artY, x: artX }}
@@ -40,7 +40,7 @@ export default function PageHero({ crumb, eyebrow, title, text, primary, seconda
         aria-hidden="true"
       >
         <div className={`${styles.float} ${flip ? styles.flip : ''}`}>
-          <Image src="/images/hero-ribbons-white.webp" alt="" fill priority sizes="60vw" style={{ objectFit: 'cover' }} />
+          <Image src="/images/hero-ribbons-dark.webp" alt="" fill priority sizes="60vw" style={{ objectFit: 'cover' }} />
         </div>
       </motion.div>
 

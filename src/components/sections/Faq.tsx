@@ -16,7 +16,7 @@ export default function Faq({ items = faq.items, eyebrow = faq.eyebrow, title = 
 }) {
   const [open, setOpen] = useState<number>(0);
   return (
-    <section id="faq" className={`section-pad ${styles.section}`}>
+    <section data-section="faq" id="faq" className={`section-pad ${styles.section}`}>
       <div className={`inner ${styles.grid}`}>
         <div className={styles.left}>
           <SectionHeading eyebrow={eyebrow} title={title} size="md" />

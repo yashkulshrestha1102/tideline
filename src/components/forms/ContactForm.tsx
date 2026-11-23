@@ -35,7 +35,7 @@ export default function ContactForm({ channels, topics }: { channels: readonly C
   };
 
   return (
-    <section className={`section-pad ${styles.section}`}>
+    <section data-section="contact-form" className={`section-pad ${styles.section}`}>
       <div className={`inner ${styles.grid}`}>
         <div className={styles.channels}>
           {channels.map((c, i) => (

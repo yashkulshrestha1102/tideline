@@ -230,8 +230,7 @@ export const ctaBand = {
 
 // ---------------- Effects ----------------
 export const effects = {
-  waterRipple: true, // water ripple under the cursor across the whole site
+  waterRipple: true, // water ripple under the cursor — always on
   waterRippleStyle: 'realistic' as 'realistic' | 'rings', // 'realistic' = WebGL water, 'rings' = simple circles
-  showRippleToggle: true, // small on/off pill bottom-left (for testing — set false before launch)
   designerCursor: true, // dot + gliding circle cursor (desktop only)
 };

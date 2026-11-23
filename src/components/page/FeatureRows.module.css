@@ -1,5 +1,5 @@
 .section {
-  background: linear-gradient(180deg, var(--cream) 0%, #ffffff 50%, var(--cream) 100%);
+  background: linear-gradient(180deg, var(--cream) 0%, var(--bg) 50%, var(--cream) 100%);
   padding: clamp(60px, 6vw, 100px) var(--gutter);
   overflow: hidden;
 }
@@ -80,7 +80,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: #dcefe6;
+  background: var(--tint);
   color: var(--teal);
 }
 .visual {

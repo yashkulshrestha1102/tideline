@@ -118,17 +118,17 @@ function render(kind: MockKind) {
           </div>
           <svg viewBox="0 0 320 140" className={styles.chart} aria-hidden="true">
             {[30, 60, 90, 120].map((y) => (
-              <line key={y} x1="0" x2="320" y1={y} y2={y} stroke="rgba(11,47,44,.07)" />
+              <line key={y} x1="0" x2="320" y1={y} y2={y} stroke="color-mix(in srgb, var(--ink-2) 7%, transparent)" />
             ))}
             <motion.path
               d="M0 130 C 50 120, 90 110, 130 92 S 220 50, 320 18"
-              fill="none" stroke="#03524D" strokeWidth="3" strokeLinecap="round"
+              fill="none" stroke="#2BA58C" strokeWidth="3" strokeLinecap="round"
               initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={vp}
               transition={{ duration: 2, ease }}
             />
             <motion.path
               d="M0 130 C 60 126, 110 118, 160 108 S 250 84, 320 70"
-              fill="none" stroke="#2BA58C" strokeWidth="2.5" strokeDasharray="6 6"
+              fill="none" stroke="#66BEAC" strokeWidth="2.5" strokeDasharray="6 6"
               initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={vp}
               transition={{ duration: 2, delay: 0.3, ease }}
             />

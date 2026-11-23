@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   padding: calc(var(--nav-h) + 50px) var(--gutter) 80px;
-  background: linear-gradient(180deg, #ffffff 0%, var(--cream-2) 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--cream-2) 100%);
   border-bottom: 1px solid var(--line);
 }
 .compact {
@@ -50,7 +50,7 @@
   gap: 10px;
   margin-bottom: 26px;
   font-size: 13.5px;
-  color: #5a7670;
+  color: var(--subtle);
 }
 .crumbs a {
   color: var(--teal);

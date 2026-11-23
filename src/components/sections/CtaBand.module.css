@@ -2,8 +2,8 @@
   position: relative;
   overflow: hidden;
   padding: clamp(120px, 14vw, 200px) var(--gutter);
-  background: linear-gradient(160deg, #03524d 0%, #012e2b 100%);
-  color: #eaf6f1;
+  background: linear-gradient(160deg, var(--teal) 0%, var(--deep-3) 100%);
+  color: var(--on-deep);
   text-align: center;
 }
 .art {
@@ -35,14 +35,14 @@
   font-size: clamp(48px, 7vw, 116px);
   line-height: 0.98;
   letter-spacing: -0.02em;
-  color: #f3faf7;
+  color: var(--on-deep-2);
 }
 .text {
   margin: 28px auto 0;
   max-width: 540px;
   font-size: 18px;
   line-height: 1.6;
-  color: #b7d4ca;
+  color: var(--odm);
 }
 .actions {
   margin-top: 44px;
@@ -57,7 +57,7 @@
   font-size: 17px;
   font-weight: 600;
   background: #9ee6d2;
-  color: #012e2b;
+  color: var(--deep-3);
 }
 .primary:hover {
   background: #c9f0df;
@@ -68,7 +68,7 @@
   padding: 0 30px;
   font-size: 17px;
   border: 1px solid rgba(234, 246, 241, 0.35);
-  color: #eaf6f1;
+  color: var(--on-deep);
 }
 .secondary:hover {
   background: rgba(234, 246, 241, 0.1);

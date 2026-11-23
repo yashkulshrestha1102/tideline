@@ -4,7 +4,7 @@ import styles from './MarqueeBand.module.css';
 
 export default function MarqueeBand() {
   return (
-    <section className={styles.band} aria-label="What Raisedesk brings together">
+    <section data-section="moving-text" className={styles.band} aria-label="What Raisedesk brings together">
       <ScrollMarquee rows={marqueeRows} />
     </section>
   );

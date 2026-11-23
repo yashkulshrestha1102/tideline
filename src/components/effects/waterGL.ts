@@ -6,6 +6,7 @@
 // click-through canvas over the page. Sleeps when idle.
 // Returns null when the device can't run it (caller falls back).
 // ------------------------------------------------------------
+import { themed } from '@/lib/theme';
 
 export type WaterOptions = {
   /** cursor ripple radius in CSS px */
@@ -75,6 +76,7 @@ precision highp float;
 uniform sampler2D u_state;
 uniform vec2 u_texel;
 uniform float u_intensity;
+uniform vec3 u_teal;
 in vec2 uv;
 out vec4 o;
 void main() {
@@ -97,7 +99,7 @@ void main() {
   float hi = clamp(max(shade, 0.0) * 2.6 * u_intensity + glint * 0.8, 0.0, 0.6);
   float sh = clamp(max(-shade, 0.0) * 2.0 * u_intensity, 0.0, 0.3);
 
-  vec3 teal = vec3(0.075, 0.47, 0.415);
+  vec3 teal = u_teal;
   // premultiplied alpha
   vec3 rgb = vec3(1.0) * hi + teal * sh;
   float a = clamp(hi + sh, 0.0, 0.85);
@@ -156,7 +158,7 @@ export function createWaterGL(canvas: HTMLCanvasElement, opts: WaterOptions = {}
   const U = {
     sim: { state: u(simP, 'u_state'), texel: u(simP, 'u_texel'), damping: u(simP, 'u_damping') },
     drop: { state: u(dropP, 'u_state'), res: u(dropP, 'u_res'), drops: u(dropP, 'u_drops'), count: u(dropP, 'u_count') },
-    ren: { state: u(renP, 'u_state'), texel: u(renP, 'u_texel'), intensity: u(renP, 'u_intensity') },
+    ren: { state: u(renP, 'u_state'), texel: u(renP, 'u_texel'), intensity: u(renP, 'u_intensity'), teal: u(renP, 'u_teal') },
   };
 
   // full-screen triangle
@@ -257,6 +259,7 @@ export function createWaterGL(canvas: HTMLCanvasElement, opts: WaterOptions = {}
     gl.uniform1i(U.ren.state, 0);
     gl.uniform2f(U.ren.texel, 1 / simW, 1 / simH);
     gl.uniform1f(U.ren.intensity, intensity);
+    gl.uniform3f(U.ren.teal, tealRGB[0], tealRGB[1], tealRGB[2]);
     gl.drawArrays(gl.TRIANGLES, 0, 3);
   };
 
@@ -280,8 +283,10 @@ export function createWaterGL(canvas: HTMLCanvasElement, opts: WaterOptions = {}
     }
     raf = requestAnimationFrame(frame);
   };
+  let tealRGB = themed(19, 120, 106).map((v) => v / 255);
   const wake = () => {
     lastInput = performance.now();
+    if (!running) tealRGB = themed(19, 120, 106).map((v) => v / 255);
     if (running) return;
     running = true;
     raf = requestAnimationFrame(frame);

@@ -41,15 +41,15 @@ export function MenuIcon({ size = 24, open = false }: P & { open?: boolean }) {
 export function BarsIcon() {
   return (
     <svg width="26" height="24" viewBox="0 0 26 24" aria-hidden="true">
-      <rect x="1" y="14" width="5" height="9" rx="1" fill="#2BA58C" />
-      <rect x="9" y="9" width="5" height="14" rx="1" fill="#2BA58C" />
-      <rect x="17" y="2" width="5" height="21" rx="1" fill="#2BA58C" />
+      <rect x="1" y="14" width="5" height="9" rx="1" fill="#66BEAC" />
+      <rect x="9" y="9" width="5" height="14" rx="1" fill="#66BEAC" />
+      <rect x="17" y="2" width="5" height="21" rx="1" fill="#66BEAC" />
     </svg>
   );
 }
 
 export function LogoMark({ light = false }: { light?: boolean }) {
-  const c = light ? ['#9EE6D2', '#5FC9AF', '#2BA58C'] : ['#0B4E49', '#0E6B62', '#2C8F82'];
+  const c = light ? ['#9ee6d2', '#5fc9af', '#66BEAC'] : ['#0b4e49', '#0e6b62', '#2c8f82'];
   return (
     <svg width="78" height="34" viewBox="0 0 78 34" fill="none" aria-hidden="true">
       <path d="M2 13 C 14 2, 26 2, 38 10 S 62 18, 76 8" stroke={c[0]} strokeWidth="3" strokeLinecap="round" />
@@ -62,7 +62,7 @@ export function LogoMark({ light = false }: { light?: boolean }) {
 /* ---------- Stats icons ---------- */
 export function FoundersIcon() {
   return (
-    <svg width="38" height="30" viewBox="0 0 38 30" fill="none" stroke="#14625A" strokeWidth={1.6}
+    <svg width="38" height="30" viewBox="0 0 38 30" fill="none" stroke="#2BA58C" strokeWidth={1.6}
       strokeLinecap="round" aria-hidden="true">
       <circle cx="19" cy="9" r="5" />
       <circle cx="8" cy="12" r="3.6" />
@@ -75,7 +75,7 @@ export function FoundersIcon() {
 
 export function HandshakeIcon() {
   return (
-    <svg width="42" height="30" viewBox="0 0 42 30" fill="none" stroke="#14625A" strokeWidth={1.6}
+    <svg width="42" height="30" viewBox="0 0 42 30" fill="none" stroke="#2BA58C" strokeWidth={1.6}
       strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M2 10l7-5 6 2 5-2 6 3" />
       <path d="M40 10l-7-5-5 1" />
@@ -87,7 +87,7 @@ export function HandshakeIcon() {
 
 export function GlobeIcon() {
   return (
-    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#14625A" strokeWidth={1.3} aria-hidden="true">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#2BA58C" strokeWidth={1.3} aria-hidden="true">
       <circle cx="12" cy="12" r="10" />
       <path d="M2 12h20M12 2c3 3 4.5 6.5 4.5 10S15 19 12 22M12 2C9 5 7.5 8.5 7.5 12S9 19 12 22M4 7h16M4 17h16" />
     </svg>
@@ -97,7 +97,7 @@ export function GlobeIcon() {
 /* ---------- Journey icons ---------- */
 const jp = {
   fill: 'none',
-  stroke: '#E9FFF7',
+  stroke: '#EAF6F1',
   strokeLinecap: 'round' as const,
   strokeLinejoin: 'round' as const,
 };

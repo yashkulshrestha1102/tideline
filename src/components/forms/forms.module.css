@@ -16,8 +16,8 @@
   min-height: 52px;
   padding: 0 18px;
   border-radius: 14px;
-  border: 1px solid rgba(11, 47, 44, 0.16);
-  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid color-mix(in srgb, var(--ink-2) 16%, transparent);
+  background: color-mix(in srgb, var(--surface) 85%, transparent);
   font: 400 16px var(--f-sans);
   color: var(--ink-2);
   outline: none;
@@ -32,12 +32,12 @@
 .textarea:focus,
 .select:focus {
   border-color: var(--mint);
-  background: #fff;
+  background: var(--surface);
   box-shadow: 0 0 0 4px rgba(43, 165, 140, 0.15);
 }
 .input::placeholder,
 .textarea::placeholder {
-  color: #8aa09a;
+  color: var(--subtle-4);
 }
 .error {
   font-size: 13px;
@@ -57,8 +57,8 @@
   min-height: 44px;
   padding: 0 18px;
   border-radius: 999px;
-  border: 1px solid rgba(11, 47, 44, 0.18);
-  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--ink-2) 18%, transparent);
+  background: var(--surface);
   font: 500 15px var(--f-sans);
   color: var(--ink-2);
   cursor: pointer;

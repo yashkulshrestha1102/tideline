@@ -32,7 +32,7 @@ export default function SignInForm() {
   };
 
   return (
-    <section className={styles.wrap}>
+    <section data-section="sign-in" className={styles.wrap}>
       <motion.aside
         className={styles.art}
         initial={{ opacity: 0, x: -60 }}
@@ -40,7 +40,7 @@ export default function SignInForm() {
         transition={{ duration: 1.2, delay: 0.4, ease }}
       >
         <div className={styles.artImg} aria-hidden="true">
-          <Image src="/images/hero-ribbons-white.webp" alt="" fill priority sizes="50vw" style={{ objectFit: 'cover' }} />
+          <Image src="/images/hero-ribbons-dark.webp" alt="" fill priority sizes="50vw" style={{ objectFit: 'cover' }} />
         </div>
         <div className={styles.artCopy}>
           <p className={styles.artQuote}>

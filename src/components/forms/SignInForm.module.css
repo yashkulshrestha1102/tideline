@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   padding: calc(var(--nav-h) + 30px) var(--gutter) 60px;
   gap: 30px;
-  background: linear-gradient(180deg, #ffffff 0%, var(--cream-2) 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--cream-2) 100%);
 }
 .art {
   position: relative;
@@ -12,7 +12,7 @@
   min-height: 520px;
   border-radius: 32px;
   overflow: hidden;
-  background: linear-gradient(160deg, #03524d, #012e2b);
+  background: linear-gradient(160deg, var(--teal), var(--deep-3));
 }
 .artImg {
   position: absolute;
@@ -26,7 +26,7 @@
   left: 40px;
   right: 40px;
   bottom: 40px;
-  color: #eaf6f1;
+  color: var(--on-deep);
 }
 .artQuote {
   margin: 0;
@@ -41,7 +41,7 @@
   margin: 16px 0 0;
   max-width: 380px;
   font-size: 16px;
-  color: #b7d4ca;
+  color: var(--odm);
 }
 .panel {
   flex: 1 1 420px;
@@ -71,8 +71,8 @@
   width: 100%;
   min-height: 54px;
   border-radius: 999px;
-  border: 1px solid rgba(11, 47, 44, 0.18);
-  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--ink-2) 18%, transparent);
+  background: var(--surface);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -92,7 +92,7 @@
   align-items: center;
   gap: 14px;
   font-size: 13px;
-  color: #7a8f8a;
+  color: var(--subtle-3);
 }
 .or::before,
 .or::after {
@@ -128,7 +128,7 @@
   height: 44px;
   border: 0;
   background: none;
-  color: #5a7670;
+  color: var(--subtle);
   cursor: pointer;
 }
 

@@ -16,8 +16,8 @@
   min-height: 44px;
   padding: 0 16px 0 6px;
   border-radius: 999px;
-  border: 1px solid rgba(11, 47, 44, 0.12);
-  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid color-mix(in srgb, var(--ink-2) 12%, transparent);
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 16px 34px -20px rgba(3, 52, 50, 0.55);
@@ -35,12 +35,12 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: #e4e6de;
-  color: #5a7670;
+  background: var(--tint-5);
+  color: var(--subtle);
   transition: background 0.3s, color 0.3s;
 }
 .on .dot {
   background: var(--teal);
-  color: #eaf6f1;
+  color: var(--on-deep);
   box-shadow: 0 0 0 4px rgba(43, 165, 140, 0.18);
 }

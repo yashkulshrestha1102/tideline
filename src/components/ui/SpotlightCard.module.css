@@ -7,7 +7,7 @@
   height: 100%;
   border-radius: 26px;
   overflow: hidden;
-  border: 1px solid rgba(11, 47, 44, 0.08);
+  border: 1px solid color-mix(in srgb, var(--ink-2) 8%, transparent);
   transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry));
   transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease), border-color 0.5s;
 }
@@ -36,19 +36,19 @@
 
 /* tones */
 .toneLight {
-  background: rgba(255, 255, 255, 0.78);
+  background: color-mix(in srgb, var(--surface) 78%, transparent);
   color: var(--ink-2);
 }
 .toneDark {
-  background: linear-gradient(160deg, #034a45 0%, #012e2b 100%);
-  color: #eaf6f1;
+  background: linear-gradient(160deg, var(--deep-5) 0%, var(--deep-3) 100%);
+  color: var(--on-deep);
   border-color: rgba(158, 230, 210, 0.14);
 }
 .toneDark .glow {
   background: radial-gradient(420px circle at var(--mx) var(--my), rgba(158, 230, 210, 0.18), transparent 60%);
 }
 .toneTeal {
-  background: linear-gradient(160deg, #1e8f79 0%, #03524d 100%);
+  background: linear-gradient(160deg, #1e8f79 0%, var(--teal) 100%);
   color: #f6fbf8;
   border-color: transparent;
 }

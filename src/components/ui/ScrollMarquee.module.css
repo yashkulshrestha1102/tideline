@@ -55,7 +55,7 @@
   height: clamp(14px, 1.4vw, 22px);
   border-radius: 50%;
   flex: none;
-  background: radial-gradient(circle at 35% 30%, #ffffff 0, #f3ebd9 45%, #b9a37a 100%);
+  background: radial-gradient(circle at 35% 30%, var(--bg) 0, #f3ebd9 45%, #b9a37a 100%);
   box-shadow: 0 4px 12px -4px rgba(120, 100, 60, 0.6);
 }
 
